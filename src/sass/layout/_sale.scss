@@ -1,0 +1,74 @@
+.sale {
+    background-color: var(--primary-bg-color);
+}
+
+.sale-title {
+    font-size: 24px;
+    line-height: 1.16;
+    color: #000000;
+    // color: var(--primary-text-color);
+}
+
+.sale-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include mobile {
+        gap: 24px;
+    }
+
+    @include tablet {
+        gap: 38px;
+    }
+
+    @include desktop {
+        gap: 20px;
+    }
+}
+
+.sale-item {
+    
+    @include tablet {
+        width: calc((100% - 38px) / 2);
+    }
+
+    @include desktop {
+        width: calc((100% - 20px) / 4);
+    }
+}
+
+.sale-thumb {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.sale-subtitle {
+    
+    width: 100%;
+    font-size: 22px;
+    line-height: 1.18;
+    color: var(--accent);
+    
+}
+
+.sale-desk {
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.sale-text {
+    font-size: 14px;
+    text-decoration-line: line-through;
+    color: var(--contacts-color);
+}
+
+.sale-price {
+    font-size: 20px;
+    color: var(--accent);
+
+    margin-left: 80px;
+}
