@@ -1,0 +1,55 @@
+.blog-section{
+    background-color: var(--primary-bg-color);
+    
+    width: 100%;
+    padding: 20px 0 112px 0;
+    @include tablet{
+        padding: 40px 0 179px 0;
+    }
+    @include desktop{
+        padding: 48px 0 184px 0;
+    }
+}
+
+.blog-container{
+    border: 1px solid red;
+
+    @include tablet{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.entry{
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.entry-title{
+    width: 100%;
+    margin-bottom: 16px;
+    @include mobile{
+        width: 288px;
+    }
+    @include tablet{
+        width: 688px;
+    }
+    @include desktop{
+        width: 1196px;
+    }
+}
+
+.entry-img{
+    margin-bottom: 8px;
+}
+.entry-about{
+    margin-bottom: 16px;
+}
+
+.entry-title{
+    margin-bottom: 8px;
+}
+
+.entry-summary{
+    margin-bottom: 8px;
+}
