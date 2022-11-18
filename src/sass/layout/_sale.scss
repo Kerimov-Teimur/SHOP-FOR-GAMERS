@@ -8,24 +8,33 @@
     line-height: 1.16;
     
     color: var(--primary-text-color);
+    margin-bottom: 16px;
+    margin-left: 80px;
+
+    @media screen and (min-width: 767px) {
+        margin-left: 142px;
+    } 
+
 }
 
 .sale-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    padding: 0 2px 0 1px;
 
     @include tablet {
         gap: 38px;
+        padding: 0 40px;
     }
 
     @include desktop {
         gap: 20px;
+        padding: 0;
     }
 }
 
 .sale-item {
-    
     @include tablet {
         width: calc((100% - 38px) / 2);
     }
@@ -33,7 +42,12 @@
     @include desktop {
         width: calc((100% - 20px * 3) / 4);
     }
+
+    & img {
+        border-radius: 12px;
+    }
 }
+
 
 .sale-thumb {
     display: flex;
