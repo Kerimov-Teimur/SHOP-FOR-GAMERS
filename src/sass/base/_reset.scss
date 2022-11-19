@@ -20,7 +20,9 @@ p {
 }
 
 /* Класс для обнуления базовых свойств у списков (ul) */
-.list {
+
+ul,
+ol {
     list-style: none;
     padding-left: 0;
     margin: 0;
@@ -44,3 +46,8 @@ img {
 address {
     font-style: normal;
 }
+
+a {
+    text-decoration: none;
+  }
+  
