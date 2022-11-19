@@ -36,11 +36,25 @@
 .entry-title{
     width: 100%;
     margin-bottom: 16px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16;
+
+
+    color: var(--primary-text-color);
     @include mobile{
         width: 288px;
+
+        
     }
     @include tablet{
         width: 688px;
+
+        font-size: 56px;
+        line-height: 1;
     }
     @include desktop{
         width: 1196px;
@@ -50,14 +64,39 @@
 .entry-img{
     margin-bottom: 8px;
 }
-.entry-about{
-    margin-bottom: 16px;
+
+
+.entry-author, .enetry-about, .entry-link{
+    margin-bottom: 8px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    color: var(--primary-text-color);
+
+    @include tablet{
+        font-size: 24px;
+    }
 }
 
-.entry-title{
-    margin-bottom: 8px;
+.entry-about{
+    color: var(--contacts-color);
 }
 
 .entry-summary{
     margin-bottom: 8px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.16;
+
+    color: var(--primary-text-color);
+}
+
+.entry-link{
+    color: var(--accent);
 }
