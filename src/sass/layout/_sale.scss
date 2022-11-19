@@ -1,0 +1,136 @@
+.sale {
+    // background-color: var(--primary-bg-color);
+    background-image: url(../images/sale/sale-bg.jpg);
+    padding: 48px 0;
+
+    @media screen and (min-width: 767px) {
+        padding: 120px 0;
+    }
+
+    @include retina {
+        background-image: url(../images/sale/sale-bgx2.jpg);
+    }
+}
+
+.sale-gallery-mob {
+   @include tablet {
+    display: none;
+   }
+}
+
+.sale-gallery-tab {
+    @include mobile {
+        display: none;
+    }
+
+    @include tablet {
+        display: block;
+    }
+
+    @include desktop {
+        display: none;
+    }
+}
+
+.sale-gallery-des {
+    @include mobile {
+            display: none;
+        }
+    
+        @include tablet {
+            display: none;
+        }
+    
+        @include desktop {
+            display: block;
+        }
+}
+
+.sale-title {
+    font-size: 24px;
+    line-height: 1.16;
+    
+    color: var(--primary-text-color);
+    margin-bottom: 16px;
+    margin-left: 80px;
+
+    @media screen and (min-width: 767px) {
+        margin-left: 142px;
+    } 
+
+}
+
+.sale-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0 2px 0 1px;
+
+    @include tablet {
+        gap: 38px;
+        padding: 0 40px;
+    }
+
+    @include desktop {
+        gap: 20px;
+        padding: 0;
+    }
+}
+
+.sale-item {
+    @include tablet {
+        width: calc((100% - 38px) / 2);
+    }
+
+    @include desktop {
+        width: calc((100% - 20px * 3) / 4);
+    }
+
+    & img {
+        border-radius: 12px;
+    }
+}
+
+
+.sale-thumb {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    padding: 0 16px 8px 8px;
+}
+
+.sale-subtitle {
+    
+    width: 100%;
+    font-size: 22px;
+    line-height: 1.18;
+    color: var(--accent);
+    
+}
+
+.sale-desk {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+
+    
+}
+
+.sale-text {
+    font-size: 14px;
+    text-decoration-line: line-through;
+    color: var(--contacts-color);
+}
+
+.sale-price {
+    font-size: 20px;
+    color: var(--accent);
+
+    margin-left: 80px;
+}
+
+.sale-btn {
+    display: block;
+    margin: 0 auto;
+}
