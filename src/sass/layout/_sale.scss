@@ -1,6 +1,49 @@
 .sale {
-    background-color: var(--primary-bg-color);
-    padding: 48px 0 48px 0;
+    // background-color: var(--primary-bg-color);
+    background-image: url(../images/sale/sale-bg.jpg);
+    padding: 48px 0;
+
+    @media screen and (min-width: 767px) {
+        padding: 120px 0;
+    }
+
+    @include retina {
+        background-image: url(../images/sale/sale-bgx2.jpg);
+    }
+}
+
+.sale-gallery-mob {
+   @include tablet {
+    display: none;
+   }
+}
+
+.sale-gallery-tab {
+    @include mobile {
+        display: none;
+    }
+
+    @include tablet {
+        display: block;
+    }
+
+    @include desktop {
+        display: none;
+    }
+}
+
+.sale-gallery-des {
+    @include mobile {
+            display: none;
+        }
+    
+        @include tablet {
+            display: none;
+        }
+    
+        @include desktop {
+            display: block;
+        }
 }
 
 .sale-title {
