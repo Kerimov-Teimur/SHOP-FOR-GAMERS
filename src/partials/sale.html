@@ -1,5 +1,5 @@
 <section class="sale">
-  <div class="container container-sale">
+  <div class="container sale-container">
     <h2 class="sale-title">Sale</h2>
 
     <div class="sale-gallery-des">
@@ -298,12 +298,24 @@
       <ul class="sale-list list">
         <li class="sale-item">
           <a class="sale-link link" href="">
-            <img
-              srcset="./images/sale/img1-des.jpg, ./images/sale/img1-desx2.jpg"
-              src="./images/sale/img1-des.jpg"
-              alt="accessories"
-              width="285"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/sale/img1-des.jpg   1x,
+                  ./images/sale/img1-desx2.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                srcset="
+                  ./images/sale/img1-des.jpg   1x,
+                  ./images/sale/img1-desx2.jpg 2x
+                "
+                src="./images/sale/img1-des.jpg"
+                alt="accessories"
+              />
+            </picture>
+
             <div class="sale-thumb">
               <h3 class="sale-subtitle">Xiberia K9 PRO PC Headset</h3>
               <div class="sale-desk">
@@ -315,12 +327,23 @@
         </li>
         <li class="sale-item">
           <a class="sale-link link" href="">
-            <img
-              srcset="./images/sale/img5-des.jpg, ./images/sale/img5-desx2.jpg"
-              src="./images/sale/img5-des.jpg"
-              alt="accessories"
-              width="285"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/sale/img5-des.jpg   1x,
+                  ./images/sale/img5-desx2.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                srcset="
+                  ./images/sale/img5-des.jpg   1x,
+                  ./images/sale/img5-desx2.jpg 2x
+                "
+                src="./images/sale/img5-des.jpg"
+                alt="accessories"
+              />
+            </picture>
             <div class="sale-thumb">
               <h3 class="sale-subtitle">RGB LED Backlit Mechanical Keyboard</h3>
               <div class="sale-desk">
@@ -332,12 +355,23 @@
         </li>
         <li class="sale-item">
           <a class="sale-link link" href="">
-            <img
-              srcset="./images/sale/img3-des.jpg, ./images/sale/img3-desx2.jpg"
-              src="./images/sale/img3-des.jpg"
-              alt="accessories"
-              width="285"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/sale/img3-des.jpg   1x,
+                  ./images/sale/img3-desx2.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                srcset="
+                  ./images/sale/img3-des.jpg   1x,
+                  ./images/sale/img3-desx2.jpg 2x
+                "
+                src="./images/sale/img3-des.jpg"
+                alt="accessories"
+              />
+            </picture>
             <div class="sale-thumb">
               <h3 class="sale-subtitle">G95 Light Surround Gaming Headset</h3>
               <div class="sale-desk">
@@ -349,12 +383,23 @@
         </li>
         <li class="sale-item">
           <a class="sale-link link" href="">
-            <img
-              srcset="./images/sale/img7-des.jpg, ./images/sale/img7-desx2.jpg"
-              src="./images/sale/img7-des.jpg"
-              alt="accessories"
-              width="285"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/sale/img7-des.jpg   1x,
+                  ./images/sale/img7-desx2.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                srcset="
+                  ./images/sale/img7-des.jpg   1x,
+                  ./images/sale/img7-desx2.jpg 2x
+                "
+                src="./images/sale/img7-des.jpg"
+                alt="accessories"
+              />
+            </picture>
             <div class="sale-thumb">
               <h3 class="sale-subtitle">
                 Malloom 1200 DPI 2.4Ghz Wireless Mouse
@@ -369,6 +414,6 @@
       </ul>
     </div>
 
-    <button type="button" class="sale-btn">View all</button>
+    <button type="button" class="btn">View all</button>
   </div>
 </section>

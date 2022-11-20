@@ -1,11 +1,12 @@
 .container {
-  width: 100%;
-  margin: 0 auto;
-
-  @include mobile {
-    width: 480px;
+    width: 100%;
+    margin: 0 auto;
     padding: 0 16px;
-  }
+
+    @include mobile {
+        width: 320px;
+        padding: 0 16px;
+    }
 
   @include tablet {
     width: 768px;
