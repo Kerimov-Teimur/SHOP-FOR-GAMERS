@@ -1,0 +1,227 @@
+// .container {}
+
+.article-container {
+    font-family: 'Roboto';
+background-color: #01383A}
+
+.article-title {
+        color: #FFFFFF;
+        font-weight: 600;
+        line-height: 1.17;
+        @include mobile {
+            font-size: 24px;
+            margin-bottom: 31px;
+        }
+    
+        @include tablet {
+            font-size: 56px;
+            margin-bottom: 72px;
+            line-height: 1;
+        }
+    
+        @include desktop {
+            font-size: 56px;
+            margin-bottom: 59px;
+        }
+    
+    }
+
+.article-image-container {
+    @include mobile {
+    
+        
+        }
+    
+        @include tablet {
+            
+         
+        }
+    
+        @include desktop {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 48px;
+                }
+      
+        }
+.article-image-container-tablet {
+    @include mobile {}
+    
+        @include tablet { 
+            display: flex;
+            gap: 40px;
+            margin-bottom: 16px;
+        }
+    
+        @include desktop {
+            
+        }
+    
+    }
+
+
+
+    .text-container {
+        display: flex;
+            gap: 20px;
+            flex-direction: column;
+        @include mobile {
+            font-size: 16px; 
+        }
+        
+            @include tablet {
+                margin-bottom: 20px;
+                
+                font-size: 24px;
+               
+            }
+        
+            @include desktop {
+                width: 690px;
+                font-size: 24px;
+            }
+
+
+       
+       
+        
+       
+
+    }
+
+    .first-text {
+        @include mobile {
+            display: none;
+        }
+        
+            @include tablet { 
+                display: none;
+            }
+        
+            @include desktop {display: flex;
+            gap: 96px;
+             justify-content: flex-end;
+             margin-bottom: 24px;
+        
+    }}
+    .first-text-tablet  {
+        @include mobile {
+                display: contents;
+            }
+        
+            @include tablet {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                justify-content: end;
+            }
+        
+            @include desktop { display: none;
+    }}
+
+    .who-write {
+        line-height: 1;
+            
+        @include mobile {
+            font-size: 16px;
+            color: #ffff;
+           
+            }
+            @include tablet {
+                font-weight: 600;
+                    font-size: 24px;
+                    color: #86E543;
+            }
+            @include desktop {
+        
+            }
+        
+        
+    }
+
+    .when-write {
+        line-height: 1;
+            color: #8D9289;
+            @include mobile {
+                font-size: 16px;
+            }
+        
+            @include tablet {
+                font-weight: 600;
+                font-size: 24px;
+            }
+        
+            @include desktop {}
+
+    }
+
+    .what-write {
+    color: #FFFFFF;
+    font-weight: 400;
+        
+            @include mobile {
+                font-size: 16px;
+                    line-height: 1.19;
+            }
+        
+            @include tablet {
+            font-size: 24px;
+            line-height: 1.17;
+            }
+        
+            @include desktop {}
+            font-size: 24px;
+            line-height: 1.17;
+            
+    }
+
+    .second-text {
+        font-weight: 400;
+        @include mobile {
+            font-size: 16px;
+            color: #ffff;
+            }
+            @include tablet {
+                font-size: 24px;
+                    line-height: 1.17;
+                    color: #86E543;
+                margin: 0;            }
+             
+            @include desktop {
+        
+    }}
+
+        .last-text-container {
+            
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            @include mobile {font-size: 16px;}
+            @include tablet {margin-top: 20px;}
+            @include desktop {}
+
+
+        }
+
+
+
+    .last-text {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 1.17;
+            color: #FFFFFF;}
+       
+    .last-text-tablet {
+        @include mobile {}
+        
+            @include tablet {
+               
+            }
+        
+            @include desktop {
+                display: none;
+            }
+
+    }
+    
