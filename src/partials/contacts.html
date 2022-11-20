@@ -1,0 +1,42 @@
+<section>
+    <div class="contacts container">
+        <h1 class="section-title">Contacts</h1>
+        <picture class="contacts-img">
+            <source srcset="./images/contacts/cont-bgi.jpg 1x, ./images/contacts/cont-bgi-2x.jpg 2x"
+                media="(min-width: 1280px)">
+            <source srcset="./images/contacts/cont-bgi-tab.jpg 1x, ./images/contacts/cont-bgi-tab-2x.jpg 2x"
+                media="(min-width: 768px)">
+            <source srcset="./images/contacts/cont-bgi-mob.jpg 1x, ./images/contacts/cont-bgi-mob-2x.jpg 2x" 
+                media="(max-width: 767px)">
+            <img class="images" src="./images/contacts/cont-bgi.jpg" alt="img">
+        </picture>
+        <div class="contacts-desk">
+            <div class="contacts-right">
+                <p class="contacts-info">
+                    In case of queries about order handling and/ or delay, drop us an email at
+            
+                    <a class="link" href="mailto:info@shopforgamers.com">info@shopforgamers.com</a>
+                </p>
+                <ul class="contacts-group list">
+                    <li class="contacts-item">
+                        <h3 class="contacts-group-title">Email</h3>
+                        <a class="contacts-link link" href="mailto:sfg.info@gmail.com">sfg.info@gmail.com</a>
+                    </li>
+                    <li class="contacts-item">
+                        <h3 class="contacts-group-title">Phone number</h3>
+                        <a class="contacts-link link" href="tel:+380936432288">+38 (093) 643 22 88</a>
+                        <a class="contacts-link link" href="tel:+380503454423">+38 (050) 345 44 23</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="contacts-form action=">
+                <h2 class="contacts-form-title">Contact us</h2>
+                <input class="contacts-input" type="text" placeholder="Name">
+                <input class="contacts-input" type="email" placeholder="Email">
+                <label class="contacts-comm-title" for="contacts-comment">Leave your message</label>
+                <textarea class="contacts-texterea" name="contacts-comment" id="contacts-comment" rows="10"></textarea>
+                <button class="contacts-btn" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
