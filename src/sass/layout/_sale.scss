@@ -13,8 +13,10 @@
 }
 
 .sale-container {
-    width: 320px;
-    padding: 0 16px;
+    @media screen and (max-width: 767px) {
+        width: 320px;
+        padding: 0 16px;
+    }
 
 }
 
