@@ -2,6 +2,7 @@
   background-color: var(--footer-bg-color);
   padding: 25px 32px 24px 16px;
   color: var(--primary-text-color);
+  font-family: 'Roboto';
   @include tablet {
     padding: 40px 50px 40px 40px;
   }
@@ -30,7 +31,6 @@ ul {
 
 .footer-logo-link {
   max-width: 116px;
-  font-family: 'Roboto';
   font-size: 23px;
   line-height: 1.16;
   font-style: normal;
@@ -68,7 +68,6 @@ ul {
   gap: 16px;
 }
 .footer-page-item {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -90,7 +89,6 @@ ul {
   margin-bottom: 16px;
 }
 .adress-text {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -100,7 +98,6 @@ ul {
   }
 }
 .adress-link {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
