@@ -1,0 +1,112 @@
+.footer {
+  background-color: var(--footer-bg-color);
+  padding: 25px 32px 24px 16px;
+  color: var(--primary-text-color);
+  font-family: 'Roboto';
+  @include tablet {
+    padding: 40px 50px 40px 40px;
+  }
+  @include desktop {
+    padding-right: 178px;
+  }
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    flex-direction: row;
+  }
+}
+
+.footer-logo-link {
+  max-width: 116px;
+  font-size: 23px;
+  line-height: 1.16;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  @include tablet {
+    margin-right: 61px;
+  }
+  @include desktop {
+    max-width: 187px;
+    margin-right: 118px;
+  }
+}
+
+.icon-thumb {
+  display: flex;
+  flex-direction: row;
+  gap: 159px;
+  margin-top: 25px;
+  @include tablet {
+    margin-top: 0;
+    gap: 89px;
+    margin-right: 73px;
+  }
+  @include desktop {
+    gap: 217px;
+    margin-right: 281px;
+  }
+}
+
+.footer-page-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-page-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+.icon-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  @include tablet {
+    flex-direction: row;
+    gap: 16px;
+  }
+  @include desktop {
+    flex-direction: column;
+  }
+}
+.mail-list {
+  margin-bottom: 16px;
+}
+.adress-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  &.mail {
+    margin-bottom: 8px;
+  }
+}
+.adress-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--contacts-color);
+}
+.phone-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
