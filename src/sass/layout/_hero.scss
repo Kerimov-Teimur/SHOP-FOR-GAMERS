@@ -3,7 +3,8 @@
 }
 
 .hero-container {
-    
+  display: flex;
+  flex-direction: column;
   padding: 179px 36px;
   align-items: center;
   height: 500px;
@@ -13,37 +14,43 @@
     url(../images/hero/bg-hero.jpg);
   background-size: 60px 99px, 150px 186px, 88px 42px, cover;
   background-repeat: no-repeat;
-  background-position: top 87px left 0px, top -48px Left 211px,
-    top 394px left 150px, left 75% top 50%;
+  background-position: top 58px left 16px, top -48px right -40px,
+    bottom 30px right 74px, left 75% top 200%;
 
   @include tablet {
+    align-items: flex-start;
     padding: 150px 40px 200px 40px;
     align-items: left;
     height: 724px;
 
     background-size: 100px 165px, 180px 223px, 143px 69px, cover;
-    background-position: top 68.87px left 430px, top 193px left 530px,
-      top 446px left 421px, 100%;
+    background-position: top 40px right 166px, top 226px right 20px,
+      bottom 128px right 188px, 100%;
   }
 
   @include desktop {
-    background-image: url(../images/hero/bg-hero.jpg);
-    background-size: auto;
-    background-position: 100%;
+    background-size: 133px 220px, 270px 335px, 230px 111px, cover;
+    background-position: top 69px left 588px, top 155px, right 90px,
+      bottom 202px right 356px, 100% -40%;
   }
 }
 
 .hero-title {
-    
   display: block;
   text-align: center;
-  width: 250px;
+  align-items: center;
+  width: 247px;
   font-weight: 600;
   font-size: 32px;
-  line-height: 1.12;
+  line-height: 1.187;
 
   color: var(--primary-text-color);
   margin-bottom: 25px;
+
+  @include mobile {
+    font-size: 32px;
+    line-height: 1.12;
+  }
 
   @include tablet {
     font-size: 56px;
@@ -62,7 +69,7 @@
 }
 
 .hero-link {
-  display: block;
+  display: inline-block;
   text-align: center;
 
   font-weight: 700;
@@ -79,4 +86,3 @@
     display: inline-block;
   }
 }
-
