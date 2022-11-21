@@ -1,6 +1,68 @@
 .sale {
-    background-color: var(--primary-bg-color);
-    padding: 48px 0 48px 0;
+    // background-color: var(--primary-bg-color);
+    background-image: url(../images/sale/sale-bg.jpg);
+    padding: 48px 0;
+
+    @include retina {
+        background-image: url(../images/sale/sale-bgx2.jpg);
+    }
+
+    @media screen and (min-width: 767px) {
+        padding: 120px 0;
+    }
+}
+
+.sale-container {
+    @media screen and (max-width: 767px) {
+        width: 320px;
+        padding: 0 16px;
+    }
+
+}
+
+
+.sale-gallery-mob {
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+
+    @include tablet {
+        display: none;
+    }
+
+    @include desktop {
+        display: none;
+    }
+}
+
+.sale-gallery-tab {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @include tablet {
+        display: block;
+    }
+
+    @include desktop {
+        display: none;
+    }
+}
+
+.sale-gallery-des {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @include tablet {
+        display: none;
+    }
+    
+    @include desktop {
+        display: block;
+    }
 }
 
 .sale-title {
@@ -8,23 +70,40 @@
     line-height: 1.16;
     
     color: var(--primary-text-color);
+    margin-bottom: 16px;
+    margin-left: 80px;
+
+    @include tablet {
+        margin-left: 142px;
+    } 
+
 }
 
 .sale-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    padding: 0 2px 0 1px;
+
+    @include mobile {
+        gap: 24px;
+        padding: 0 2px 0 1px;
+    }
 
     @include tablet {
         gap: 38px;
+        padding: 0 40px;
     }
 
     @include desktop {
         gap: 20px;
+        padding: 0;
     }
 }
 
 .sale-item {
+    display: block;
+    width: 100%;
     
     @include tablet {
         width: calc((100% - 38px) / 2);
@@ -33,22 +112,23 @@
     @include desktop {
         width: calc((100% - 20px * 3) / 4);
     }
+
+    & img {
+        border-radius: 12px;
+    }
 }
 
+
 .sale-thumb {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    
-    padding: 0 16px 8px 8px;
+    padding: 8px 16px 8px 8px;
 }
 
 .sale-subtitle {
-    
-    width: 100%;
+    font-weight: 500;
     font-size: 22px;
     line-height: 1.18;
     color: var(--accent);
+    margin: 0;
     
 }
 
@@ -61,19 +141,16 @@
 }
 
 .sale-text {
+    font-weight: 500;
     font-size: 14px;
     text-decoration-line: line-through;
     color: var(--contacts-color);
 }
 
 .sale-price {
+    font-weight: 500;
     font-size: 20px;
     color: var(--accent);
 
     margin-left: 80px;
-}
-
-.sale-btn {
-    display: block;
-    margin: 0 auto;
 }
