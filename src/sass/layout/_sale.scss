@@ -1,4 +1,5 @@
 .sale {
+    position: relative;
     background-color: var(--primary-bg-color);
     padding: 48px 0;
 
@@ -28,22 +29,68 @@
 
     // }
 
-    // @include desktop {
-    //     background-image: url(../images/sale/sale-bg-des.jpg);
-    //     background-repeat: no-repeat;
-    //     background-position: center;
-    //     background-size: contain;
+    @include desktop {
+        background-image: url(../images/sale/sale-bg-des.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
 
-    //     @include retina {
-    //         background-image: url(../images/sale/sale-bg-desx2.jpg);
-    //     }
-    // }
+        @include retina {
+            background-image: url(../images/sale/sale-bg-desx2.jpg);
+        }
+    }
 
     
     @media screen and (min-width: 767px) {
         padding: 120px 0;
     }
     
+    // .line-des {
+    //   @media screen and (min-width: 1280px) {
+        
+    //     position: absolute;
+    //     display: block;
+    //     width: 100%;
+    //     top: 170px;
+    //     left: 40px;
+    //   } 
+
+    //     @media screen and (max-width: 1279px) {
+    //         display: none;
+    //     }
+
+    // }
+
+    // .line-tab {
+    //     @include tablet {
+    //         position: fixed;
+    //         display: block;
+    //         width: 100%;
+    //         top: 140px;
+    //         left: 60px;
+
+    //         @include desktop {
+    //             display: none;
+    //         }
+
+    //     }
+
+    //     @media screen and (max-width: 767px) {
+    //         display: none;
+    //     }      
+    // }
+
+    // .line-mob {
+    //     display: block;
+    //     position: absolute;
+    //     width: 100%;
+    //     top: 40px;
+    //     left: 60px;
+
+    //     @media screen and (min-width: 768px) {
+    //         display: none;
+    //     }
+    // }
 
 }
 
@@ -108,7 +155,6 @@
     color: var(--primary-text-color);
     margin-bottom: 16px;
     margin-left: 80px;
-    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5), 0px 4px 10px rgba(134, 229, 67, 0.1);
 
     @include tablet {
         font-weight: 500;
