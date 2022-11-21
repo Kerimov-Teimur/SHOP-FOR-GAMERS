@@ -19,4 +19,4 @@
       refs.menu.classList.remove("is-open");
       refs.body.classList.remove("no-scroll");
     }
-  })();
+})();
