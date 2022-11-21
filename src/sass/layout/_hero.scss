@@ -1,5 +1,6 @@
 .hero {
   height: 601px;
+  width: 100%;
   background-color: var(--primary-bg-color);
   background-image: url(../images/hero/bg-hero.jpg);
   background-repeat: no-repeat;
@@ -23,34 +24,58 @@
   flex-direction: column;
   padding: 179px 36px;
   align-items: center;
+  
+  .hero-container::before {
+    content: "";
+position: absolute;
+width: 304px;
+height: 520px;
+position: absolute;
+    top: -48px;
+    right: -5px;
+    opacity: 0.7;
 
-  background-image:  url(../images/hero/bg-gadget-mob.png);
-  background-repeat: no-repeat;
-  background-size: 304px 472px;
-  background-position:top -48px right 0px;
+    background-image:  url(../images/hero/bg-gadget-mob.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    @include retina {
+          background-image: url(../images/hero/bg-gadget-mob-2x.png);}
 
-@include tablet {
-  align-items: flex-start;
-  padding: 154px 340px 208px 40px;
+    
+    
+  
+  @include tablet {
+    width: 379px;
+    height: 616px;
+    top: 211px;
+    right: 129px;
 
-
-  background-image: url(../images/hero/bg-gadget-tab.png);
-  background-repeat: no-repeat;
-  background-size: 379px 616px;
-  background-position:top 20px right 0px;
-}
-
-@include desktop {
-  padding: 527px 674px 118px 91px;
-
-  background-image: url(../images/hero/bg-gadget-desk.png);
-  background-repeat: no-repeat;
-  background-size: 611px 573px;
-  background-position: top 280px left 483px ;
-}
-
+    background-image: url(../images/hero/bg-gadget-tab.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @include retina {
+    background-image: url(../images/hero/bg-gadget-tab-2x.png);
+  }
   }
   
+  @include desktop {
+    width: 611px ;
+    height: 573px;
+    top: 280px;
+    right: 142px;
+  
+    background-image: url(../images/hero/bg-gadget-desk.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  @include retina {
+    background-image: url(../images/hero/bg-gadget-desk-2x.png);
+  }
+  }
+
+  }
+
+
 .hero-title {
   display: block;
   text-align: center;
