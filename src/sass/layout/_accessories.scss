@@ -1,5 +1,36 @@
+html{
+  @media screen and (min-width: 320px) {
+    background-color:var(--primary-bg-color);
+    background-image: url(../images/accessories/accessories-bg-mob.jpg);
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: contain;
+       @include retina {
+          background-image: url(../images/accessories/accessories-bg-mob@2x.jpg);
+      }
+  }
+    @include tablet {
+          background-image: url(../images/accessories/accessories-bg-tab.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          @include retina {
+              background-image: url(../images/accessories/accessories-bg-tab@2x.jpg);
+          }
+      }  
+      @include desktop {
+          background-image: url(../images/accessories/accessories-bg-desk.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          @include retina {
+              background-image: url(../images/accessories/accessories-bg-desk@2x.jpg);
+          }
+      }
+  }
+
 .section.accessories {
-  background-color: #01383a;
+  // background-color: #01383a;
   padding: 40px 0;
   @include tablet {
     padding: 120px 0;
@@ -18,17 +49,19 @@
   }
 }
 
+
 .btn-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   gap: 24px;
   margin-bottom: 32px;
+  width: 272px;
   @include tablet {
     gap: 53px;
     margin-bottom: 72px;
+    width: 100%;
   }
   @include desktop {
     gap: 44px;
@@ -42,7 +75,7 @@
   font-size: 16px;
   line-height: 1.18;
   width: 124px;
-  //   height: 35px;
+  height: 35px;
   padding: 8px 0;
   color: var(--accent);
   background-color: inherit;
@@ -60,25 +93,34 @@
   &:focus {
     color: var(--primary-bg-color);
     background-color: var(--accent);
+    box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
+     0px 4px 20px rgba(134, 229, 67, 0.4);
   }
 
   @include tablet {
     min-width: 132px;
     height: 51px;
-    padding: 16px 0;
   }
+
   @include desktop {
     min-width: 168px;
     height: 51px;
-    padding: 16px 0;
   }
 }
 
 .container.accessories {
+  padding: 0 16px;
+  @include mobile {
+    max-width: 480px;
+    padding: 0 16px;
+  }
+
   @include tablet {
+    max-width: 768px;
     padding: 0 80px;
   }
   @include desktop {
+    max-width: 1280px;
     padding: 0 40px;
   }
 }
@@ -86,9 +128,8 @@
 .accessories-list {
   display: flex;
   flex-wrap: wrap;
-  @include mobile {
-    gap: 24px;
-  }
+  margin: 0 auto;
+  gap: 24px;
   @include tablet {
     column-gap: 38px;
     row-gap: 44px;
@@ -104,7 +145,7 @@
   font-size: 28px;
   line-height: 1.16;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--primary-text-color);
   margin-bottom: 27px;
   @include tablet {
     font-size: 56px;
@@ -122,20 +163,27 @@
 
 .accessories-item {
   max-width: 285px;
+  height: auto;
+  margin: 0 auto;
   @include tablet {
+    max-width: 285px;
     width: calc((100% - 38px) / 2);
   }
 
   @include desktop {
+    max-width: 285px;
     width: calc((100% - 20px) / 4);
   }
 }
 
 .accessories-wrap {
+  display: block;
   position: relative;
   overflow: hidden;
   border: solid 1px var(--accent);
   border-radius: 12px;
+  margin-bottom: 8px;
+  box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
 }
 
 .accessories-text {
@@ -160,9 +208,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 8px;
   padding-left: 8px;
-  padding-right: 16px;
 }
 
 .accessories-name {
@@ -180,12 +226,14 @@
 
 .accessories-price {
   font-size: 14px;
+  font-weight: 500;
   text-decoration-line: line-through;
   color: var(--contacts-color);
 }
 
 .accessories-sale {
   font-size: 20px;
+  font-weight: 500;
   color: var(--accent);
   margin-left: 80px;
 }
@@ -198,6 +246,9 @@
 }
 
 .page-tablet {
+  @media screen and (min-width:320px) {
+    display: none;   
+     }
   @include mobile {
     display: none;
   }
@@ -212,7 +263,15 @@
 }
 
 .page-mob {
+  @include mobile {
+    display: block;
+  }
   @include tablet {
     display: none;
   }
+
+  @include desktop {
+    display: none;
+  }
 }
+
