@@ -3,9 +3,6 @@
   width: 100%;
   background-color: var(--primary-bg-color);
   background-image: url(../images/hero/bg-hero.jpg);
-  @include retina {
-  background-image: url(../images/hero/bg-hero-2X.jpg);
-  }
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 75% 0;
@@ -27,20 +24,6 @@
   flex-direction: column;
   padding: 179px 36px;
   align-items: center;
-
- position: relative;
- overflow: hidden;
-
- @include tablet {
-  align-items: flex-start;
-  padding: 154px 340px 208px 40px;
-}
-@include desktop {
-  padding: 391px 0px 40px 40px;
-}
-}
-
-
   
   .hero-container::before {
     content: "";
