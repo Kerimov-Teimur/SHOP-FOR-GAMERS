@@ -16,14 +16,23 @@
   background-size: cover;
   background-position: 0 0;
 }
-
 }
 
 .hero-container {
   display: flex;
   flex-direction: column;
-  padding: 179px 36px;
-  align-items: center;
+  padding: 180px 127px;
+  align-items: center;  
+
+
+  @include tablet {
+    padding: 290px 0px 208px 40px ;
+    align-items: flex-start;
+  }
+@include desktop {
+  padding: 316px 78px 329px 142px;
+}
+}
   
   .hero-container::before {
     content: "";
@@ -31,7 +40,7 @@ position: absolute;
 width: 304px;
 height: 520px;
 position: absolute;
-    top: -48px;
+    top: 48px;
     right: -5px;
     opacity: 0.7;
 
@@ -40,16 +49,14 @@ position: absolute;
     background-size: 100%;
     background-repeat: no-repeat;
     @include retina {
-          background-image: url(../images/hero/bg-gadget-mob-2x.png);}
+          background-image: url(../images/hero/bg-gadget-mob-2x.png);
+        }
 
-    
-    
-  
   @include tablet {
     width: 379px;
     height: 616px;
-    top: 211px;
-    right: 129px;
+    top: 150px;
+    
 
     background-image: url(../images/hero/bg-gadget-tab.png);
     background-repeat: no-repeat;
@@ -60,10 +67,9 @@ position: absolute;
   }
   
   @include desktop {
-    width: 611px ;
-    height: 573px;
-    top: 280px;
-    right: 142px;
+    width: 668px;
+    height: 652px;
+    top: 70px;
   
     background-image: url(../images/hero/bg-gadget-desk.png);
     background-repeat: no-repeat;
@@ -109,3 +115,6 @@ position: absolute;
   }
 }
 
+.hero-link {
+  padding: 16px 20px;
+}
