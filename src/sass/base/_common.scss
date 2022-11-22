@@ -1,7 +1,10 @@
 body{
-  background-image: url(../images/sale/sale-bg-mob.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/sale/sale-bg-mob.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 }
 
