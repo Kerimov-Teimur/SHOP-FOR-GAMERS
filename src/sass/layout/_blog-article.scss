@@ -1,16 +1,19 @@
 // .container {}
 
 .article-container {
+    width: 100%;
+    padding-top: 144px;
+    padding-bottom: 20px;
     font-family: 'Roboto';
-background-color:var(--primary-bg-color)}
+    background-color:var(--primary-bg-color)}
 
 .article-title {
  color: var(--primary-text-color);
- font-weight: 600;
+ font-weight: 500;
  line-height: 1.17;
+ margin-bottom: 30px;
         @include mobile {
-         font-size: 24px;
-         margin-bottom: 31px;}
+         font-size: 24px;}
     
         @include tablet {
         font-size: 56px;
@@ -56,24 +59,29 @@ background-color:var(--primary-bg-color)}
     }
 
     .first-text {
-        @include mobile {
+        display: none;
+        @include mobile { 
          display: none;}
          @include tablet { 
          display: none;}
-        
-         @include desktop {display: flex;
+         @include desktop {
+         display: flex;
           gap: 96px;
           justify-content: flex-end;
           margin-bottom: 24px }
         }
     .first-text-tablet  {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+         flex-direction: column;
+        gap: 8px;
         @include mobile {
             display: flex;
             flex-direction: column;
             gap: 8px;
             margin-top: 20px;
-            margin-bottom: 20px;
-         display: contents;}
+            margin-bottom: 20px;}
         @include tablet {
         display: flex;
         flex-direction: column;
@@ -84,14 +92,13 @@ background-color:var(--primary-bg-color)}
 
     .who-write {
      line-height: 1;
+    color: var(--primary-text-color);
         @include mobile {
-        font-size: 16px;
-        color: var(--primary-text-color);}
+        font-size: 16px;}
         @include tablet {
-        font-weight: 600;
+        font-weight: 500;
          font-size: 24px;
-        color: var(--accent);}
-        
+        color: var(--accent);}    
     }
 
     .when-write {
@@ -100,7 +107,7 @@ background-color:var(--primary-bg-color)}
          @include mobile {
         font-size: 16px; }
         @include tablet {
-         font-weight: 600;
+         font-weight: 500;
                 font-size: 24px;
              }
     }
@@ -121,10 +128,11 @@ background-color:var(--primary-bg-color)}
     }
 
     .second-text {
+        color: var(--primary-text-color);
         font-weight: 400;
         @include mobile {
          font-size: 16px;
-        color:var(--primary-text-color);}
+        }
         @include tablet {
         font-size: 24px;
          line-height: 1.17;
