@@ -1,16 +1,27 @@
 .blog-section{
-    background-color: var(--primary-bg-color);
+    // background-color: var(--primary-bg-color);
+    background-image: url(../images/blog/bg-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    // background-size: cover;
+    @include mobile{
+        background-image: url(../images/blog/bg-tab.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
     
     width: 100%;
     padding: 40px 0 48px 0;
     @include tablet{
         padding: 120px 0;
+        background-image: url(../images/blog/bg-desk.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
     }
 }
 
 .blog-title{
-    display: block;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
