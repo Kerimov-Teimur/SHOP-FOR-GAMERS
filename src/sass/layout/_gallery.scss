@@ -13,24 +13,24 @@
     }
 
     @include retina {
-        background-image: url(./images/gallery/bg_mob-2x.jpeg);
+        background-image: url(../images/gallery/bg_mob-2x.jpeg);
     }
 
     @include tablet {
-        background-image: url(./images/gallery/bg_tablet-1x.jpeg);
+        background-image: url(../images/gallery/bg_tablet-1x.jpeg);
 
         @include retina {
-            background-image: url(./images/gallery/bg_tablet-2x.jpeg);
+            background-image: url(../images/gallery/bg_tablet-2x.jpeg);
         }
     }
 
     @include desktop {
-        background-image: url(./images/gallery/bg_desktop-1x.jpeg);
+        background-image: url(../images/gallery/bg_desktop-1x.jpeg);
         background-size: cover;
         background-position: bottom center;
 
         @include retina {
-            background-image: url(./images/gallery/bg_desktop-2x.jpeg);
+            background-image: url(../images/gallery/bg_desktop-2x.jpeg);
         }
     }
 }
