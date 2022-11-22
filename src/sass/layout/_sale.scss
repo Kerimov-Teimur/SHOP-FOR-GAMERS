@@ -1,12 +1,15 @@
 .sale {
-    // background-color: var(--primary-bg-color);
-    padding: 48px 0;
+    padding:0 0 48px 0;
+
+    @media screen and (min-width: 767px) {
+            padding: 0 0 120px 0;
+        }
 
 
     @media screen and (min-width: 320px) {
         background-image: url(../images/sale/line-mob.png);
             background-repeat: no-repeat;
-            background-position: -1px 52px;
+            background-position: -1px 14px;
             background-size: contain;
         
             @include retina {
@@ -18,8 +21,8 @@
     @include tablet {
         background-image: url(../images/sale/line-tab.png), url(../images/sale/sale-bg-tab.jpg);
         background-repeat: no-repeat;
-        background-position: 10px 8%, center;
-        background-size: contain;
+        background-position: 10px 2%, center;
+        background-size: contain, cover;
 
         @include retina {
             background-image: url(../images/sale/sale-bg-tabx2.jpg);
@@ -30,8 +33,8 @@
     @include desktop {
         background-image: url(../images/sale/line-desktop.png), url(../images/sale/sale-bg-des.jpg);
         background-repeat: no-repeat;
-        background-position: left -10px top 14%, center;
-        background-size: contain, contain;
+        background-position: left -10px top 3%, center;
+        background-size: contain, cover;
 
         @media screen and (max-width: 1279px) {
             display: none;
@@ -43,9 +46,7 @@
     }
 
     
-    @media screen and (min-width: 767px) {
-        padding: 120px 0;
-    }
+    
     
     // .line-des {
     //   @media screen and (min-width: 1280px) {

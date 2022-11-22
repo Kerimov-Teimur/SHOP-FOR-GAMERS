@@ -1,31 +1,36 @@
 <section class="gallery-section">
   <div class="container gallery-container">
-    <h2 class="gallery-title visually-hidden">Galery</h2>
+    <h2 class="visually-hidden">Galery</h2>
     <div class="gallery-slider"></div>
     <div class="gallery-banner">
       <picture>
         <source
           srcset="
-            ./images/gallery/gallery1_tablet-1x.jpeg 1x,
-            ./images/gallery/gallery1_tablet-2x.jpeg 2x
+            ./images/gallery/img1-des.jpg   1x,
+            ./images/gallery/img1-desx2.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/gallery/img1-tab.jpg   1x,
+            ./images/gallery/img1-tabx2.jpg 2x
           "
           media="(min-width: 768px)"
         />
         <source
           srcset="
-            ./images/gallery/gallery1_mob-1x.jpeg 1x,
-            ./images/gallery/gallery1_mob-2x.jpeg 2x
+            ./images/gallery/img1-mob.jpg   1x,
+            ./images/gallery/img1-mobx2.jpg 2x
           "
           media="(max-width: 767px)"
         />
         <img
           class="gallery-image"
-          src="./images/gallery/gallery1_mob-1x.jpeg"
+          src="./images/gallery/img1-des.jpg"
           alt="Клавіатура з геймпадом"
-          width="450"
         />
       </picture>
-      <p class="galery-text-place">One place for everything you want</p>
     </div>
     <div class="gallery-pagination">
       <div class="gallery-pagination-active"></div>
