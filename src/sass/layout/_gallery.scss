@@ -1,8 +1,37 @@
 .gallery-section {
     padding: 0 0 48px;
-    
+    background-image: url(../images/gallery/bg_mob-1x.jpeg);
+    background-size: cover;
+    background-position-y: -566px;
+
     @include mobile {
         padding: 120px 0;
+    }
+
+    @include desktop {
+        padding: 0;
+    }
+
+    @include retina {
+        background-image: url(./images/gallery/bg_mob-2x.jpeg);
+    }
+
+    @include tablet {
+        background-image: url(./images/gallery/bg_tablet-1x.jpeg);
+
+        @include retina {
+            background-image: url(./images/gallery/bg_tablet-2x.jpeg);
+        }
+    }
+
+    @include desktop {
+        background-image: url(./images/gallery/bg_desktop-1x.jpeg);
+        background-size: cover;
+        background-position: bottom center;
+
+        @include retina {
+            background-image: url(./images/gallery/bg_desktop-2x.jpeg);
+        }
     }
 }
 
@@ -18,8 +47,21 @@
     line-height: 38px;
 }
 
+.gallery-slider {
+    width: 1200px;
+    height: 786px;
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+}
+
 .gallery-banner {
     position: relative;
+    margin-bottom: 24px;
+    @include desktop {
+        display: none;
+    }
 }
 
 .gallery-image {
@@ -39,7 +81,30 @@
     background: linear-gradient(270deg, #1EDDE0 13.26%, #8BDA41 51.01%, #EF001B 107.89%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    // background-clip: text;
+    background-clip: text;
     text-emphasis-color: transparent;
     width: 257px;
+}
+
+.gallery-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    @include desktop {
+        display: none;
+    }
+}
+
+.gallery-pagination-img,
+.gallery-pagination-active {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-text-color);
+    border-radius: 8px;
+}
+
+.gallery-pagination-active {
+    width: 40px;
 }
