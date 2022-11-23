@@ -1,23 +1,21 @@
 .blog-section{
     // background-color: var(--primary-bg-color);
-    background-image: url(../images/blog/bg-mob.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    // background-size: cover;
-    @include mobile{
-        background-image: url(../images/blog/bg-tab.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
     
-    width: 100%;
-    padding: 40px 0 48px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include retina{
+        background-image: url(../images/blog/bg-mob.jpg);
+    }
+    @include mobile{
+        padding: 40px 0 48px 0;
+        background-image: url(../images/blog/bg-tab.jpg);
+    }
     @include tablet{
         padding: 120px 0;
-        background-image: url(../images/blog/bg-desk.jpg);
-        background-repeat: no-repeat;
-        background-position: top;
+        @include retina{
+            background-image: url(../images/blog/bg-desk.jpg);
+        }
+        
     }
 }
 
