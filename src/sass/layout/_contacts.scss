@@ -1,0 +1,291 @@
+@import "../components/button";
+
+.contacts {
+    color: var(--primary-text-color);
+    padding-top: 40px;
+    padding-bottom: 48px;
+    font-size: 16px;
+    line-height: 1.18;
+    
+    @include tablet {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        font-size: 24px;
+        line-height: 1.16;
+
+    }
+    @include desktop {
+        font-size: 24px;
+        line-height: 1.16;
+    }
+}
+
+.contacts-bgi{
+    background-color: #01383A;
+    @include mobile {
+        max-width: 320px;
+        background-image: url(../images/contacts/bgi-mob.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+
+        @include retina {
+            max-width: 768px;
+            background-image: url(../images/contacts/bgi-mob-2x.jpg);
+        }
+
+    }
+    @include tablet {
+        max-width: 1280px;
+        background-image: url(../images/contacts/bgi-tab.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+    
+        @include retina {
+            background-image: url(../images/contacts/bgi-tab-2x.jpg);
+        }
+
+    }
+    @include desktop {
+        background-image: url(../images/contacts/bgi-des.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: 15% 95%;
+    
+        @include retina {
+            background-image: url(../images/contacts/bgi-des-2x.jpg);
+        }
+    }
+}
+
+.images {
+    @include tablet {
+        border-radius: 13px;
+    }
+}
+
+.section-title{
+    color: var(--primary-text-color);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16;
+    margin-bottom: 35px;
+    @include tablet {
+        font-size: 56px;
+        line-height: 1.17;
+        margin-bottom: 67px;
+        margin-left: 99px;
+    }
+}
+
+.contacts-info{
+    width: 100%;
+    margin-bottom: 10px;
+    @include tablet {
+        max-width: 488px; 
+    }
+}
+
+.contacts-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-right: 32px;
+    margin-bottom: 24px;
+}
+
+.contacts-group {
+    margin-top: 24px;
+    @include tablet{
+        display: flex;
+        gap: 32px;
+        margin-bottom: 40px;
+    }
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.contacts-right{
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+.contacts-link{
+    color: var(--contacts-color);
+}
+
+// -----------------------------------FORM   
+
+.contacts-form{
+    display: flex;
+    flex-wrap: wrap;
+    
+    @include tablet {
+        max-width: 591px;
+        margin: 0 auto;
+    }
+
+    @include desktop {
+        max-width: 589px;
+        margin: 0;
+    }
+}
+
+.contacts-input{
+    color: var(--primary-text-color);
+    width: 100%;
+    margin-bottom: 40px;
+    padding-bottom: 4px;
+    background: transparent;
+    outline: transparent;
+    border: none;
+    border-bottom: 1px solid var(--accent);
+    &::placeholder{
+        color: var(--primary-text-color);
+        font-size: 16px;
+        line-height: 1.25;
+        text-transform: capitalize;
+        @include tablet {
+            font-size: 18px;
+            line-height: 1.11;
+        }
+    }
+
+    @include desktop {
+        width: 100%;
+    }
+}
+
+.contacts-form-title{
+    margin-bottom: 16px;
+    color: var(--accent);
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.16;
+
+    @include tablet {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1.16;
+    }
+}
+
+.contacts-texterea{
+    color: var(--primary-text-color);
+    width: 100%;
+    margin-bottom: 24px;
+    height: 95px;
+    background: transparent;
+    outline: transparent;
+    resize: none;
+    border: 1px solid var(--accent);
+    @include desktop {
+        max-width: 100%;
+    }
+}
+
+.contacts-btn{
+    margin: 0 auto;
+    color: var(--primary-text-color);
+    width: 173px;
+    border: 1px solid var(--primary-text-color);
+    @include tablet {
+        width: 306px;
+    }
+}
+
+.contacts-comm-title{
+    color: #CDCDCD;
+    margin-bottom: 4px;
+}
+
+.contacts-desk{
+    margin-top: 16px;
+    @include tablet {
+        margin-top: 32px;
+    }
+    @include desktop {
+        display: flex;
+        align-items: baseline;
+        margin-top: 59px;
+    }
+}
+
+.contacts-right{
+    @include desktop {
+        margin-right: 123px;
+    }
+}
+
+.contacts-group-title{
+    @include mobile {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.18;
+    }
+    @include tablet {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.16;
+    }
+}
+// -----------------------------------FORM 
+
+.contacts-answer {
+    outline: 1px solid gold;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #01383A;
+    align-items: center;
+    text-align: center;
+    padding: 100px 29px;
+    width: 272px;
+    height: 395px;
+    @include tablet {
+        width: 688px;
+        height: 524px;
+        padding: 88px 26px;
+    }
+    @include desktop {
+        width: 768px;
+    }
+    
+}
+
+.answer-text {
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    @include tablet {
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 1.17;
+        margin-bottom: 80px;
+    }
+}
+
+.answer-btn-close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    border: transparent;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.answer-btn-icon{
+    width: 32px;
+    height: 32px;
+}
+
