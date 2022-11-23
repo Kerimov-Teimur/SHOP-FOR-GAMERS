@@ -1,4 +1,5 @@
 .sale {
+    background-color: var(--primary-bg-color);
     padding:0 0 48px 0;
 
     @media screen and (min-width: 767px) {
@@ -17,11 +18,22 @@
             }
         
     } 
+
+    @include mobile {
+        background-image: url(../images/sale/line-mob.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain;
+        
+        @include retina {
+            background-image: url(../images/sale/sale-bg-mobx2.jpg);
+        }
+    }
     
     @include tablet {
         background-image: url(../images/sale/line-tab.png), url(../images/sale/sale-bg-tab.jpg);
         background-repeat: no-repeat;
-        background-position: 10px 2%, center;
+        background-position: 2px 43px, center;
         background-size: contain, cover;
 
         @include retina {
@@ -33,7 +45,7 @@
     @include desktop {
         background-image: url(../images/sale/line-desktop.png), url(../images/sale/sale-bg-des.jpg);
         background-repeat: no-repeat;
-        background-position: left -10px top 3%, center;
+        background-position: left -10px top 46px, center;
         background-size: contain, cover;
 
         @media screen and (max-width: 1279px) {
@@ -44,56 +56,6 @@
             background-image: url(../images/sale/line-desktop.png), url(../images/sale/sale-bg-desx2.jpg);
         }
     }
-
-    
-    
-    
-    // .line-des {
-    //   @media screen and (min-width: 1280px) {
-        
-    //     position: absolute;
-    //     display: block;
-    //     width: 100%;
-    //     top: 170px;
-    //     left: 40px;
-    //   } 
-
-    //     @media screen and (max-width: 1279px) {
-    //         display: none;
-    //     }
-
-    // }
-
-    // .line-tab {
-    //     @include tablet {
-    //         position: fixed;
-    //         display: block;
-    //         width: 100%;
-    //         top: 140px;
-    //         left: 60px;
-
-    //         @include desktop {
-    //             display: none;
-    //         }
-
-    //     }
-
-    //     @media screen and (max-width: 767px) {
-    //         display: none;
-    //     }      
-    // }
-
-    // .line-mob {
-    //     display: block;
-    //     position: absolute;
-    //     width: 100%;
-    //     top: 40px;
-    //     left: 60px;
-
-    //     @media screen and (min-width: 768px) {
-    //         display: none;
-    //     }
-    // }
 
 }
 
@@ -156,14 +118,25 @@
     font-weight: 500;
     
     color: var(--primary-text-color);
-    margin-bottom: 43px;
+
+    
     margin-left: 64px;
+    margin-bottom: 35px;
+
+    @include mobile {
+        font-size: 24px;
+        line-height: 1.16;
+        font-weight: 500;
+        margin-left: 50px;
+        margin-bottom: 35px;
+    }
 
     @include tablet {
         font-weight: 500;
         font-size: 56px;
         line-height: 1.19;
         margin-left: 126px;
+        margin-bottom: 43px;
     } 
 
 }
@@ -246,7 +219,7 @@
 }
 
 
-.sale-btn {
+.sale-container .sale-btn {
     min-width: 195px;
     min-height: 65px;
     margin: 24px auto 0 auto;
