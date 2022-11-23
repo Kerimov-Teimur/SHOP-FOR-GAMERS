@@ -1,6 +1,8 @@
 .gallery-section {
-    padding: 48px 0;
-
+    @media screen and (min-width: 320px) {
+        padding:0 0 48px 0;
+    }
+    
     @include tablet{
         padding: 120px 0;
     } 
