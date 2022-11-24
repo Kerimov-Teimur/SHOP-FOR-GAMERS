@@ -1,5 +1,5 @@
 <section class="take-order section">
-  <div class="container">
+  <div class="container take-order">
     <h2 class="order-title">Take order</h2>
 
     <div class="product">
@@ -12,7 +12,7 @@
                 ./images/take_order_page/headphones1d-1x.jpg 1x,
                 ./images/take_order_page/headphones1d-2x.jpg 2x
               "
-              media="(min-width: 1200px)"
+              media="(min-width: 1280px)"
             />
             <source
               srcset="
@@ -40,8 +40,12 @@
 
 
         <div class="price-order">
-          <p class="price-text-primary">65.14 USD</p>
-          <p class="price-text-secondary">55.14 USD</p>
+          <ul class="price-list-order list"
+      >
+            <li class="price-item-order"><p class="price-text-primary">65.14 USD</p></li>
+            <li class="price-item-order"><p class="price-text-secondary">55.14 USD</p></li>
+          </ul>
+          
         </div>
       </div>
 
@@ -54,7 +58,7 @@
                   ./images/take_order_page/headphones2d-1x.jpg 1x,
                   ./images/take_order_page/headphones2d-2x.jpg 2x
                 "
-                media="(min-width: 1200px)"
+                media="(min-width: 1280px)"
               />
               <source
                 srcset="
@@ -85,7 +89,7 @@
                   ./images/take_order_page/headphones3d-1x.jpg 1x,
                   ./images/take_order_page/headphones3d-2x.jpg 2x
                 "
-                media="(min-width: 1200px)"
+                media="(min-width: 1280px)"
               />
               <source
                 srcset="
@@ -116,7 +120,7 @@
                   ./images/take_order_page/headphones4d-1x.jpg 1x,
                   ./images/take_order_page/headphones4d-2x.jpg 2x
                 "
-                media="(min-width: 1200px)"
+                media="(min-width: 1280px)"
               />
               <source
                 srcset="
@@ -147,7 +151,7 @@
                   ./images/take_order_page/headphones5d-1x.jpg 1x,
                   ./images/take_order_page/headphones5d-2x.jpg 2x
                 "
-                media="(min-width: 1200px)"
+                media="(min-width: 1280px)"
               />
               <source
                 srcset="
@@ -174,11 +178,11 @@
         </ul>
       </div>
     </div>
-
+ <p class="form-order-text">CONTACT US</p>
     <div class="about">
       <div class="other-form">
         <form class="form-order">
-          <p class="form-order-text">CONTACT US</p>
+         
 
           <input
             type="name"
@@ -252,22 +256,35 @@
       </div>
 
       <div class="btn-form">
-        <button type="submit" class="btn-order-top" data-modal-open>
+        <button type="button" class="btn-order-top"  >
           BUY IT NOW
         </button>
-        <button type="submit" class="btn-order-bottom">ADD TO CART</button>
+
+        <button type="button" class="btn-order-bottom" >ADD TO CART</button>
       </div>
 
-      <div class="modal-order-bottom">
-        <p>Thank you for your order! We will contact you soon!</p>
-        <button type="submit" class="btn-order">KEEP SHOPPING</button>
+      <div class="mob-menu is-hidden " >
+       <div class="container">
+        <div class="mob-order-top">
+          <button type="button" class="menu-btn-cross" >
+            <svg width="40px" height="40px">
+              <use
+                class="icon-cross"
+                href="./images/sprite/sprite.svg#icon-cross"
+              ></use>
+            </svg>
+          </button>
+           <p>Thank you for your order ! We will contact you soon !</p>
+           <button type="button " class="btn-order"  >KEEP SHOPPING</button>
+        </div>
       </div>
     </div>
+    </div>
 
-    <div class="modal-order-add">
+    <div class="mob-menu is-hidden">
       <div class="container">
         <div class="mob-order-top">
-          <button type="button" class="menu-btn-cross">
+          <button type="button"  class="menu-btn-cross" >
             <svg width="40px" height="40px">
               <use
                 class="icon-cross"
@@ -279,6 +296,11 @@
           <button type="submit" class="btn-order">LET'S GO!</button>
         </div>
       </div>
+      
     </div>
+    
   </div>
+  
 </section>
+
+
