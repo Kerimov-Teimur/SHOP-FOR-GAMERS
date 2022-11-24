@@ -1,3 +1,15 @@
+body{
+
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/sale/sale-bg-mob.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}
+
+
+
 .container {
     width: 100%;
     margin: 0 auto;
