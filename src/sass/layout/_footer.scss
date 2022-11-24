@@ -1,11 +1,13 @@
 .footer {
   background-color: var(--footer-bg-color);
-  padding: 25px 32px 24px 16px;
+  padding: 25px 0 24px 0;
   color: var(--primary-text-color);
   font-family: 'Roboto';
+
   @include tablet {
     padding: 40px 0;
   }
+
   @include desktop {
     padding: 40px 0;
   }
@@ -26,6 +28,10 @@ ul {
   flex-direction: column;
   @include tablet {
     flex-direction: row;
+  }
+
+  @media screen and (min-width: 320px) {
+    padding: 0 32px 0 16px;
   }
 }
 
