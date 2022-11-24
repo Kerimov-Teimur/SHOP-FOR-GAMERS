@@ -3,11 +3,12 @@
     
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 144px 0 48px 0;
     @include retina{
         background-image: url(../images/blog/bg-mob.jpg);
     }
     @include mobile{
-        padding: 144px 0 48px 0;
+        
         background-image: url(../images/blog/bg-tab.jpg);
     }
     @include tablet{
@@ -20,6 +21,8 @@
 }
 
 .blog-title{
+    position: relative;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
@@ -46,6 +49,26 @@
     @include desktop{
         padding-left: 142px;
         margin-bottom: 75px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: -36px;
+        left: 0;
+        display: block;
+        height: 63px;
+        width: 100%;
+        background-image: url(../images/blog/line-mob.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        @include tablet{
+            background-image: url(../images/blog/line-tab.png);
+            bottom: -26px;
+        }
+        @include desktop{
+            background-image: url(../images/blog/line-desktop.png);
+        }
     }
 }
 
