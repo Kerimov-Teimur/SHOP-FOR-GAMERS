@@ -1,204 +1,260 @@
-// .container {}
+.acritle {
+    background-color: var(--primary-bg-color);
+
+    @media screen and (min-width: 320px) {
+        padding: 176px 0 48px 0;
+    }
+
+    @include tablet {
+        padding: 256px 0 120px 0;
+    }
+
+    @include desktop {
+        margin: 0;
+        padding: 248px 0 120px 0;
+    }
+}
 
 
 .article-container {
-    font-family: 'Roboto';
-    max-width: 1280px;
-    padding-top: 144px;
-    padding-bottom: 20px;
+    @media screen and (min-width: 320px) {
+        padding: 0 16px;
     }
 
-.main-picture {
-    margin: 0 -16px;
-    @include mobile {
-    margin: 0 auto;
+    @include tablet {
+        padding: 0 40px;
     }
 }
-// .decoration-image {
-//     position: absolute;
-//     margin: 0 -16px;
-//     top: 200px;
-//     z-index: 1;
-// }
 
+.main-picture {
+    @media screen and (max-width: 480px) {
+        margin: 0 -16px;
+    }
+
+    @include mobile {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    @include tablet {
+        width: 100%;
+        margin: 0;
+    }
+
+    @include desktop {
+        width: 100%;
+        margin-right: 121px;
+    }
+}
+
+.main-picture img {
+    border-radius: 12px;
+}
 
 .article-title {
- color: var(--primary-text-color);
- font-weight: 500;
- line-height: 1.17;
- margin-bottom: 30px;
-        @include mobile {
-         font-size: 24px;}
-    
-        @include tablet {
-        font-size: 56px;
-         margin-bottom: 72px;
-        line-height: 1;
-        }
-        @include desktop {
-        font-size: 56px;
-         margin-bottom: 59px;
-        }
-    
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.17;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 320px) {
+        font-size: 23px;
     }
+    
+    @media screen and (max-width: 480px) {
+        max-width: 320px;
+        font-size: 24px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    @include tablet {
+        font-size: 56px;
+        margin-bottom: 72px;
+        line-height: 1;
+    }
+
+    @include desktop {
+        font-size: 56px;
+        margin-bottom: 59px;
+    } 
+}
 
 .article-image-container {
-        @include desktop {
+    @include desktop {
         display: flex;
-        justify-content: space-between;
-        margin-bottom: 48px;}
-        }
-.article-image-container-tablet {
-        @include tablet { 
-        display: flex;
-        gap: 40px;
-         margin-bottom: 16px;
-        }
-    
+        margin-bottom: 48px;
     }
+}
+
+.article-image-container-tablet {
+    @include tablet { 
+        display: flex;
+        margin-bottom: 16px;
+    }
+
+    @include desktop {
+        margin: 0;
+    }
+}
 
 .text-container {
-        display: flex;
-         gap: 20px;
-         flex-direction: column;
-        @include mobile {
-         font-size: 16px; 
-        }
-         @include tablet {
-          margin-bottom: 20px;
-          font-size: 24px;
-        }
-        @include desktop {
-         width: 690px;
-        font-size: 24px; }
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    @include mobile {
+        font-size: 16px; 
     }
 
-    .first-text {
-        display: none;
-        @include mobile { 
-         display: none;}
-         @include tablet { 
-         display: none;}
-         @include desktop {
-         display: flex;
-          gap: 96px;
-          justify-content: flex-end;
-          margin-bottom: 24px }
-        }
-    .first-text-tablet  {
+    @include tablet {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    @include desktop {
+        margin-bottom: 0;
+        width: 690px;
+        font-size: 24px; 
+    }
+}
+
+.first-text-tablet  {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
         margin-top: 20px;
         margin-bottom: 20px;
-        display: flex;
-         flex-direction: column;
-        gap: 8px;
-        @include mobile {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            margin-top: 20px;
-            margin-bottom: 20px;}
-        @include tablet {
+    }
+
+    @include tablet {
         display: flex;
         flex-direction: column;
         gap: 32px;
-         justify-content: end;}
-         @include desktop { display: none;}
-        }
+        justify-content: end;
+        margin: 0;
+    }
 
-    .who-write {
-     line-height: 1;
+    @include desktop { 
+        display: none;
+    }
+}
+
+.first-text {
+    display: none;
+
+    @include mobile {
+        display: none;
+    }
+
+    @include tablet {
+        display: none;
+    }
+
+    @include desktop {
+        display: flex;
+        gap: 97px;
+        justify-content: flex-end;
+        margin-bottom: 24px
+    }
+}
+
+.who-write {
+    font-family: 'Roboto';
+    font-style: normal;
+    line-height: 1;
     color: var(--primary-text-color);
-        @include mobile {
-        font-size: 16px;}
-        @include tablet {
+
+    @include mobile {
+        font-size: 16px;
+    }
+
+    @include tablet {
         font-weight: 500;
-         font-size: 24px;
+        font-size: 24px;
         color: var(--accent);}    
     }
 
-    .when-write {
-        line-height: 1;
-        color: var(--contacts-color);
-         @include mobile {
-        font-size: 16px; }
-        @include tablet {
-         font-weight: 500;
-                font-size: 24px;
-             }
+.when-write {
+    font-family: 'Roboto';
+    font-style: normal;
+    line-height: 1;
+    color: var(--contacts-color);
+
+    @include mobile {
+        font-size: 16px;
     }
 
-    .what-write {
+    @include tablet {
+        font-weight: 500;
+        font-size: 24px;
+    }
+}
+
+.what-write {
     color: var(--primary-text-color);
     font-weight: 400;
         
-       @include mobile {
+    @include mobile {
         font-size: 16px;
-        line-height: 1.19;}
+        line-height: 1.19;
+    }
         
-        @include tablet {
+    @include tablet {
         font-size: 24px;
-        line-height: 1.17;}
-        
-            
+        line-height: 1.17;
+    }         
+}
+
+.second-text {
+    color: var(--primary-text-color);
+    font-weight: 400;
+
+    @include mobile {
+        font-size: 16px;
     }
 
-    .second-text {
-        color: var(--primary-text-color);
-        font-weight: 400;
-        @include mobile {
-         font-size: 16px;
-        }
-        @include tablet {
+    @include tablet {
         font-size: 24px;
-         line-height: 1.17;
+        line-height: 1.17;
         color: var(--accent);
-         margin: 0;            }
+        margin: 0;            
+    }
              
 }
+
  .last-text-container {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            @include mobile {font-size: 16px;}
-            @include tablet {margin-top: 20px;}
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
-        }
-
-.last-text {
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 1.17;
-            color: var(--primary-text-color);}
-       
-.last-text-tablet {
-            @include desktop {
-                display: none;}
+    @include mobile {
+        font-size: 16px;
     }
 
-        .acritle {
-            background-color: var(--primary-bg-color);
-            @media screen and (min-width: 320px) {
-                background-image: url(../images/sale/line-mob.png);
-                background-position: 0 209px;
-                background-repeat: no-repeat;
-                background-size: contain;
-                padding: 20px 16px 20px;
-            }
-    
-            @include tablet {
-                background-image: url(../images/sale/line-tab.png);
-                background-repeat: no-repeat;
-                background-position: 0px 286px;
-                background-size: contain;
-                padding: 30px 40px;
-            }
-    
-            @include desktop {
-                background-image: url(../images/sale/line-desktop.png);
-                background-repeat: no-repeat;
-                background-position: -18px 236px;
-                background-size: contain;
-                padding: 30px 40px;
-                margin: 0;
-            }}
+    @include tablet {
+        margin-top: 20px;
+    }
+
+}
+
+.last-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.17;
+    color: var(--primary-text-color);}
+       
+.last-text-tablet {
+    @include desktop {
+        display: none;
+    }
+}
+
     
