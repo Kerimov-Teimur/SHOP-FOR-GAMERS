@@ -7,11 +7,11 @@
         background-image: url(../images/blog/bg-mob.jpg);
     }
     @include mobile{
-        padding: 40px 0 48px 0;
+        padding: 144px 0 48px 0;
         background-image: url(../images/blog/bg-tab.jpg);
     }
     @include tablet{
-        padding: 120px 0;
+        padding: 256px 0 120px 0;
         @include retina{
             background-image: url(../images/blog/bg-desk.jpg);
         }
