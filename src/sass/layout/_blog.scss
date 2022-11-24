@@ -6,6 +6,7 @@
     @include retina{
         background-image: url(../images/blog/bg-mob.jpg);
     }
+    
     @include mobile{
         padding: 40px 0 48px 0;
         background-image: url(../images/blog/bg-tab.jpg);
