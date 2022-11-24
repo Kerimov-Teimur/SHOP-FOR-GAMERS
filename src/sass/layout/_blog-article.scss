@@ -1,11 +1,26 @@
 // .container {}
 
+
 .article-container {
-    width: 100%;
+    font-family: 'Roboto';
+    max-width: 1280px;
     padding-top: 144px;
     padding-bottom: 20px;
-    font-family: 'Roboto';
-    background-color:var(--primary-bg-color)}
+    }
+
+.main-picture {
+    margin: 0 -16px;
+    @include mobile {
+    margin: 0 auto;
+    }
+}
+// .decoration-image {
+//     position: absolute;
+//     margin: 0 -16px;
+//     top: 200px;
+//     z-index: 1;
+// }
+
 
 .article-title {
  color: var(--primary-text-color);
@@ -159,4 +174,31 @@
             @include desktop {
                 display: none;}
     }
+
+        .acritle {
+            background-color: var(--primary-bg-color);
+            @media screen and (min-width: 320px) {
+                background-image: url(../images/sale/line-mob.png);
+                background-position: 0 209px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                padding: 20px 16px 20px;
+            }
+    
+            @include tablet {
+                background-image: url(../images/sale/line-tab.png);
+                background-repeat: no-repeat;
+                background-position: 0px 286px;
+                background-size: contain;
+                padding: 30px 40px;
+            }
+    
+            @include desktop {
+                background-image: url(../images/sale/line-desktop.png);
+                background-repeat: no-repeat;
+                background-position: -18px 236px;
+                background-size: contain;
+                padding: 30px 40px;
+                margin: 0;
+            }}
     
