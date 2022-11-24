@@ -3,7 +3,7 @@
     background-color:var(--primary-bg-color);
     background-image: url(../images/accessories/line-mob.png),url(../images/accessories/accessories-bg-mob.jpg);
       background-repeat: no-repeat;
-      background-position: 0 8%,62px -120px ;
+      background-position: 0 173px,62px -120px ;
       background-size: contain,cover;
        @include retina {
           background-image: url(../images/accessories/line-mob.png),url(../images/accessories/accessories-bg-mob@2x.jpg);
@@ -30,7 +30,7 @@
   }
 
 .section.accessories {
-  padding: 40px 0;
+  padding: 40px 0 48px 0;
   @include tablet {
     padding: 120px 0;
   }
@@ -47,7 +47,6 @@
     padding: 0 238px;
   }
 }
-
 
 .btn-list {
   display: flex;
@@ -137,7 +136,7 @@
   @include desktop {
     column-gap: 20px;
     row-gap: 44px;
-    margin-bottom: 52px;
+    
   }
 }
 
@@ -277,4 +276,51 @@
   @include desktop {
     display: none;
   }
+}
+
+// ------------------ Slick -----------------//
+
+.slick-dotted.slick-slider{
+  margin-bottom: 0;
+}
+
+.slick-list{
+margin-bottom: 44px;
+@include tablet{
+  margin-bottom: 52px;
+}
+}
+
+.slick-dots li.slick-active button:before {
+  width: 40px;
+  height: 16px;
+  background-color: var(--primary-text-color);
+  color: var(--primary-text-color);
+  opacity: 1;
+  border-radius: 30px;
+}
+
+.slick-dots li button:before {
+  opacity: 1;
+  width: 16px;
+  height: 16px;
+  color: var(--primary-text-color);
+  background-color: var(--primary-text-color);
+  border-radius: 30px;
+}
+
+.slick-dots>li {
+width: 16px;
+height: 16px;
+margin-right: 16px;
+margin-left: 0;
+}
+
+.slick-dots>li.slick-active{
+  width: 40px;
+}
+
+.slick-dots {
+  position: relative;
+  bottom: 0;
 }
