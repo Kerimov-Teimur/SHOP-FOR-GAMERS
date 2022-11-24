@@ -1,0 +1,2 @@
+!function(){function e(e){return e&&e.__esModule?e.default:e}var t={};Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(e,t,i){t in e?Object.defineProperty(e,t,{value:i,enumerable:!0,configurable:!0,writable:!0}):e[t]=i;return e},$(".one-time").slick(e(t)({dots:!0,infinite:!0,speed:300,slidesToShow:1,adaptiveHeight:!0,arrows:!1,autoplay:!0},"autoplay",1e3))}();
+//# sourceMappingURL=accessories-page.7d645431.js.map
