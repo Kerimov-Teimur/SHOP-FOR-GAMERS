@@ -1,25 +1,38 @@
 .gallery-section {
-    padding: 0 0 48px;
+    @media screen and (min-width: 320px) {
+        padding:0 0 48px 0;
+    }
     
-    @include mobile {
+    @include tablet{
         padding: 120px 0;
+    } 
+
+    @include tablet {
+        background-image: url(../images/gallery/sale-bg-tab.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include retina {
+            background-image: url(../images/gallery/sale-bg-tabx2.jpg);
+        }
+    }
+
+    @include desktop {
+        background-image: url(../images/gallery/sale-bg-des.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include retina {
+            background-image: url(../images/gallery/sale-bg-desx2.jpg);
+        }
     }
 }
 
+
 .gallery-container {
     padding: 0;
-}
-
-.gallery-title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 38px;
-}
-
-.gallery-banner {
-    position: relative;
 }
 
 .gallery-image {
@@ -27,19 +40,206 @@
     width: 100%;
 }
 
-.galery-text-place {
-    position: absolute;
-    left: 24px;
-    bottom: 37px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-    background: linear-gradient(270deg, #1EDDE0 13.26%, #8BDA41 51.01%, #EF001B 107.89%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    // background-clip: text;
-    text-emphasis-color: transparent;
-    width: 257px;
+.gallery-banner {
+    position: relative;
 }
+
+.gallery-thumb {
+    margin: 0;
+
+    @media screen and (min-width: 320px) {
+        position: absolute;
+        width: 257px;
+        bottom: 38px;
+        left: 24px;
+    }
+
+    @include mobile {
+        position: absolute;
+        width: 300px;
+        bottom: 38px;
+        left: 24px;
+    }
+    
+    @include tablet {
+        position: absolute;
+        width: 519px;
+        bottom: 14px;
+        left: 41px;
+    }
+
+    @include desktop {
+        position: absolute;
+        width: 519px;
+        bottom: 49px;
+        left: 345px;
+    }
+}
+
+.gallery-thumb-center {
+    @media screen and (min-width: 320px) {
+        position: absolute;
+        width: 234px;
+        bottom: 38px;
+        left: 24px;
+    }
+
+    @include mobile {
+        position: absolute;
+        width: 300px;
+        bottom: 38px;
+        left: 24px;
+    }
+
+    @include desktop {
+        position: absolute;
+        width: 519px;
+        bottom: 49px;
+        left: 49px;
+    }
+
+}
+
+.gallery-thumb-bottom {
+    @media screen and (min-width: 320px) {
+        position: absolute;
+        width: 234px;
+        bottom: 38px;
+        left: 24px;
+    }
+
+    @include mobile {
+        position: absolute;
+        width: 300px;
+        bottom: 38px;
+        left: 24px;
+    }
+
+    @include tablet {
+        position: absolute;
+        width: 551px;
+        bottom: 14px;
+        left: 41px;
+    }
+
+    @include desktop {
+        position: absolute;
+        width: 557px;
+        bottom: 49px;
+        left: 49px;
+    }
+}
+
+.gallery-text-top {
+    @media screen and (min-width: 320px) {
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        background: linear-gradient(270deg, #1EDDE0 13.26%, #8BDA41 51.01%, #EF001B 107.89%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    @include mobile {
+        font-size: 30px;
+        line-height: 1.17;
+    }
+
+    @include tablet {
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 1.2;
+        background: linear-gradient(270deg, #1EDDE0 13.26%, #8BDA41 51.01%, #EF001B 107.89%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.gallery-text-center {
+    @media screen and (min-width: 320px) {
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        background: linear-gradient(270deg, #03FE8F 23.82%, #EBDCFF 57.84%, #FF98F3 102.62%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    @include mobile {
+        font-size: 30px;
+        line-height: 1.17;
+    }
+
+    @include tablet {
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 1.2;
+        background: linear-gradient(270deg, #FFFFFF 13.26%, #693CF9 60.87%, #F475EB 107.89%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+}
+
+.gallery-text-bottom {
+    @media screen and (min-width: 320px) {
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        background: linear-gradient(270deg, #FFFFFF 13.26%, #693CF9 60.87%, #F475EB 107.89%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    @include mobile {
+        font-size: 30px;
+        line-height: 1.17;
+    }
+    
+    @include tablet {
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 1.2;
+        background: linear-gradient(270deg, #FFFFFF 13.26%, #693CF9 60.87%, #F475EB 107.89%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+// .gallery-pagination {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     gap: 16px;
+// }
+
+// .gallery-pagination-img,
+// .gallery-pagination-active {
+//     display: inline-block;
+//     width: 16px;
+//     height: 16px;
+//     background-color: var(--primary-text-color);
+//     border-radius: 8px;
+
+//     margin-top: 24px;
+    
+//     @include tablet {
+//         margin-top: 32px;
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//         margin-top: 24px;
+//     }
+
+
+// }
+
+// .gallery-pagination-active {
+//     width: 40px;
+// }

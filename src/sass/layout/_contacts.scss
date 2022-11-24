@@ -1,6 +1,7 @@
+@import "../components/button";
+
 .contacts {
     color: var(--primary-text-color);
-    // background-color: #01383A;
     padding-top: 40px;
     padding-bottom: 48px;
     font-size: 16px;
@@ -20,17 +21,21 @@
 }
 
 .contacts-bgi{
+    background-color: #01383A;
     @include mobile {
+        max-width: 320px;
         background-image: url(../images/contacts/bgi-mob.jpg);
         background-size: cover;
         background-repeat: repeat;
 
         @include retina {
+            max-width: 768px;
             background-image: url(../images/contacts/bgi-mob-2x.jpg);
         }
 
     }
     @include tablet {
+        max-width: 1280px;
         background-image: url(../images/contacts/bgi-tab.jpg);
         background-size: cover;
         background-repeat: repeat;
@@ -74,7 +79,7 @@
 
 .contacts-info{
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     @include tablet {
         max-width: 488px; 
     }
@@ -89,6 +94,7 @@
 }
 
 .contacts-group {
+    margin-top: 24px;
     @include tablet{
         display: flex;
         gap: 32px;
@@ -186,19 +192,14 @@
     margin: 0 auto;
     color: var(--primary-text-color);
     width: 173px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    text-transform: uppercase;
-    background: transparent;
     border: 1px solid var(--primary-text-color);
-    border-radius: 16px;
-
     @include tablet {
         width: 306px;
     }
 }
 
 .contacts-comm-title{
+    color: #CDCDCD;
     margin-bottom: 4px;
 }
 
@@ -233,58 +234,58 @@
     }
 }
 // -----------------------------------FORM 
-// .backdrop{
+
+.contacts-answer {
+    outline: 1px solid gold;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #01383A;
+    align-items: center;
+    text-align: center;
+    padding: 100px 29px;
+    width: 272px;
+    height: 395px;
+    @include tablet {
+        width: 688px;
+        height: 524px;
+        padding: 88px 26px;
+    }
+    @include desktop {
+        width: 768px;
+    }
     
-// }
-// .contacts-answer {
-//     position: relative;
-//     display: flex;
-//     flex-direction: column;
-//     background-color: #01383A;
-//     align-items: center;
-//     text-align: center;
-//     padding: 100px 29px;
-//     width: 272px;
-//     height: 395px;
-//     @include tablet {
-//         width: 688px;
-//         height: 524px;
-//         padding: 88px 25px;
-//     }
-//     @include desktop {
-//         width: 768px;
-//         padding: 88px 65px;
-//     }
-    
-// }
+}
 
-// .answer-text {
-//     display: flex;
-//     color: #FFFFFF;
-//     margin-bottom: 32px;
-//     font-weight: 600;
-//     font-size: 24px;
-//     line-height: 1.16;
-//     @include tablet {
-//         font-weight: 600;
-//         font-size: 56px;
-//         line-height: 1.17;
-//         margin-bottom: 80px;
-//     }
-// }
+.answer-text {
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    @include tablet {
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 1.17;
+        margin-bottom: 80px;
+    }
+}
 
-// .answer-btn-close{
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     position: absolute;
-//     top: 25px;
-//     right: 25px;
-//     border-radius: 50%;
-//     background-color: transparent;
-// }
+.answer-btn-close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    border: transparent;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
 
-// .answer-btn-icon{
-//     width: 32px;
-//     height: 32px;
-// }
+.answer-btn-icon{
+    width: 32px;
+    height: 32px;
+}
+

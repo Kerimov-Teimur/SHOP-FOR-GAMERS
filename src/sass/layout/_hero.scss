@@ -1,22 +1,35 @@
 .hero {
   height: 601px;
-  background-color: var(--primary-bg-color);
-  background-image: url(../images/hero/bg-hero.jpg);
-  @include retina {
-  background-image: url(../images/hero/bg-hero-2X.jpg);
-  }
+  background-image:  url(../images/hero/bg-gadget-mob.png), url(../images/hero/bg-hero.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 75% 0;
-@include tablet {
+  background-position: right 0px top 76px, 75% 0;
+  background-size: 304px 472px, cover;
+  background-blend-mode: luminosity;
+
+  @include retina {
+  background-image: url(../images/hero/bg-gadget-mob-2x.png), url(../images/hero/bg-hero-2x.jpg);
+  }
+
+  @include tablet {
   height: 860px;
-  background-size: cover;
-  background-position: 75% 0;
+  background-image:  url(../images/hero/bg-gadget-tab.png), url(../images/hero/bg-hero.jpg);
+  background-size:379px 616px, cover;
+  background-position: left 389px top 169px, 75% 0;
+
+  @include retina {
+    background-image: url(../images/hero/bg-gadget-tab-2x.png), url(../images/hero/bg-hero-2x.jpg);
+    }
 }
 
 @include desktop {
-  background-size: cover;
-  background-position: 0 0;
+  
+  background-image: url(../images/hero/bg-gadget-desk.png), url(../images/hero/bg-hero.jpg);
+  background-size: 668px 652px, cover;
+  background-position: left 543px top 136px, 75% 0;
+
+  @include retina {
+    background-image: url(../images/hero/bg-gadget-desk-2x.png), url(../images/hero/bg-hero-2x.jpg);
+    }
 }
 
 }
@@ -24,45 +37,20 @@
 .hero-container {
   display: flex;
   flex-direction: column;
-  padding: 179px 36px;
-  align-items: center;
+  padding-top: 284px ;
+  align-items: center;  
 
-  background-image:  url(../images/hero/bg-gadget-mob.png);
-  background-repeat: no-repeat;
-  background-size: 304px 472px;
-  background-position:top -48px right 0px;
-
-  @include retina {
-    background-image: url(../images/hero/bg-gadget-mob-2x.png);
-}
-
-@include tablet {
-  align-items: flex-start;
-  padding: 154px 340px 208px 40px;
-
-
-  background-image: url(../images/hero/bg-gadget-tab.png);
-  background-repeat: no-repeat;
-  background-size: 379px 616px;
-  background-position:top 20px right 0px;
-  @include retina {
-  background-image: url(../images/hero/bg-gadget-tab-2x.png);
-}
+  @include tablet {
+  padding-top: 290px ;
+    align-items: flex-start;
 }
 
 @include desktop {
-  padding: 527px 674px 118px 91px;
-
-  background-image: url(../images/hero/bg-gadget-desk.png);
-  background-repeat: no-repeat;
-  background-size: 611px 573px;
-  background-position: top 280px left 483px ;
-@include retina {
-  background-image: url(../images/hero/bg-gadget-desk-2x.png);
+  padding-top: 316px ;
+  padding-left: 102px;
+    align-items: flex-start;
 }
 }
-
-  }
   
 .hero-title {
   display: block;
@@ -97,3 +85,6 @@
   }
 }
 
+.hero-link {
+  padding: 16px 20px;
+}
