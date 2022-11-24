@@ -1,6 +1,7 @@
+@import "../components/button";
+
 .contacts {
     color: var(--primary-text-color);
-    background-color: #01383A;
     padding-top: 40px;
     padding-bottom: 48px;
     font-size: 16px;
@@ -11,18 +12,48 @@
         padding-bottom: 120px;
         font-size: 24px;
         line-height: 1.16;
-        background-image: url(../images/contacts/bgi-tab.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: left 60%;
+
     }
     @include desktop {
         font-size: 24px;
         line-height: 1.16;
-        background-image: url(../images/contacts/bgi-des2.jpg);
+    }
+}
+
+.contacts-bgi{
+    background-color: #01383A;
+    @include mobile {
+        max-width: 320px;
+        background-image: url(../images/contacts/bgi-mob.jpg);
         background-size: cover;
-        background-repeat: no-repeat;
-        background-position: left 90px;
+        background-repeat: repeat;
+
+        @include retina {
+            max-width: 768px;
+            background-image: url(../images/contacts/bgi-mob-2x.jpg);
+        }
+
+    }
+    @include tablet {
+        max-width: 1280px;
+        background-image: url(../images/contacts/bgi-tab.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+    
+        @include retina {
+            background-image: url(../images/contacts/bgi-tab-2x.jpg);
+        }
+
+    }
+    @include desktop {
+        background-image: url(../images/contacts/bgi-des.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: 15% 95%;
+    
+        @include retina {
+            background-image: url(../images/contacts/bgi-des-2x.jpg);
+        }
     }
 }
 
@@ -48,7 +79,7 @@
 
 .contacts-info{
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     @include tablet {
         max-width: 488px; 
     }
@@ -63,6 +94,7 @@
 }
 
 .contacts-group {
+    margin-top: 24px;
     @include tablet{
         display: flex;
         gap: 32px;
@@ -160,19 +192,14 @@
     margin: 0 auto;
     color: var(--primary-text-color);
     width: 173px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    text-transform: uppercase;
-    background: transparent;
     border: 1px solid var(--primary-text-color);
-    border-radius: 16px;
-
     @include tablet {
         width: 306px;
     }
 }
 
 .contacts-comm-title{
+    color: #CDCDCD;
     margin-bottom: 4px;
 }
 
@@ -206,3 +233,59 @@
         line-height: 1.16;
     }
 }
+// -----------------------------------FORM 
+
+.contacts-answer {
+    outline: 1px solid gold;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #01383A;
+    align-items: center;
+    text-align: center;
+    padding: 100px 29px;
+    width: 272px;
+    height: 395px;
+    @include tablet {
+        width: 688px;
+        height: 524px;
+        padding: 88px 26px;
+    }
+    @include desktop {
+        width: 768px;
+    }
+    
+}
+
+.answer-text {
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    @include tablet {
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 1.17;
+        margin-bottom: 80px;
+    }
+}
+
+.answer-btn-close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    border: transparent;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.answer-btn-icon{
+    width: 32px;
+    height: 32px;
+}
+

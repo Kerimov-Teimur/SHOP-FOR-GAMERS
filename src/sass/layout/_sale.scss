@@ -1,15 +1,61 @@
 .sale {
-    // background-color: var(--primary-bg-color);
-    background-image: url(../images/sale/sale-bg.jpg);
-    padding: 48px 0;
-
-    @include retina {
-        background-image: url(../images/sale/sale-bgx2.jpg);
-    }
+    padding: 0 0 48px 0;
 
     @media screen and (min-width: 767px) {
-        padding: 120px 0;
+            padding: 0 0 120px 0;
+        }
+
+
+    @media screen and (min-width: 320px) {
+        background-image: url(../images/sale/line-mob.png);
+        background-repeat: no-repeat;
+        background-position: -1px 14px;
+        background-size: contain;
+        
+        @include retina {
+            background-image: url(../images/sale/sale-bg-mobx2.jpg);
+        }
+        
+    } 
+
+    @include mobile {
+        background-image: url(../images/sale/line-mob.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain;
+        
+        @include retina {
+            background-image: url(../images/sale/sale-bg-mobx2.jpg);
+        }
     }
+    
+    @include tablet {
+        background-image: url(../images/sale/line-tab.png), url(../images/sale/sale-bg-tab.jpg);
+        background-repeat: no-repeat;
+        background-position: 2px 43px, center;
+        background-size: contain, cover;
+
+        @include retina {
+            background-image: url(../images/sale/sale-bg-tabx2.jpg);
+        }
+
+    }
+
+    @include desktop {
+        background-image: url(../images/sale/line-desktop.png), url(../images/sale/sale-bg-des.jpg);
+        background-repeat: no-repeat;
+        background-position: left -10px top 46px, center;
+        background-size: contain, cover;
+
+        @media screen and (max-width: 1279px) {
+            display: none;
+        }
+
+        @include retina {
+            background-image: url(../images/sale/line-desktop.png), url(../images/sale/sale-bg-desx2.jpg);
+        }
+    }
+
 }
 
 .sale-container {
@@ -19,7 +65,6 @@
     }
 
 }
-
 
 .sale-gallery-mob {
     display: flex;
@@ -66,18 +111,35 @@
 }
 
 .sale-title {
+    display: inline-block;
     font-size: 24px;
     line-height: 1.16;
+    font-weight: 500;
     
     color: var(--primary-text-color);
-    margin-bottom: 16px;
-    margin-left: 80px;
+
+    
+    margin-left: 64px;
+    margin-bottom: 35px;
+
+    @include mobile {
+        font-size: 24px;
+        line-height: 1.16;
+        font-weight: 500;
+        margin-left: 50px;
+        margin-bottom: 35px;
+    }
 
     @include tablet {
-        margin-left: 142px;
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 1.19;
+        margin-left: 126px;
+        margin-bottom: 43px;
     } 
 
 }
+
 
 .sale-list {
     display: flex;
@@ -153,4 +215,24 @@
     color: var(--accent);
 
     margin-left: 80px;
+}
+
+
+.sale-container .sale-btn {
+    min-width: 195px;
+    min-height: 65px;
+    margin: 24px auto 0 auto;
+    background-color: var(--primary-text-color);
+    padding: 16px 48px;
+    line-height: 1.19;
+    font-size: 16px;
+
+    @include tablet {
+        line-height: 1.17;
+        font-size: 28px;
+    }
+    
+    &:hover, &:focus {
+            box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5), 0px 4px 10px rgba(134, 229, 67, 0.1);
+    }
 }
