@@ -1,53 +1,56 @@
-<section class="contacts-bgi">
-    <div class="contacts container">
-        <h1 class="section-title">Contacts</h1>
-        <picture class="contacts-img">
+<section class="contatcts-page">
+    <div class="container contacts-container ">
+        <h1 class="contatcts-title">Сontacts</h1>
+        <picture>
             <source srcset="./images/contacts/cont-bgi.jpg 1x, ./images/contacts/cont-bgi-2x.jpg 2x"
                 media="(min-width: 1280px)">
             <source srcset="./images/contacts/cont-bgi-tab.jpg 1x, ./images/contacts/cont-bgi-tab-2x.jpg 2x"
                 media="(min-width: 768px)">
-            <source srcset="./images/contacts/cont-bgi-mob.jpg 1x, ./images/contacts/cont-bgi-mob-2x.jpg 2x" 
+            <source srcset="./images/contacts/cont-bgi-mob.jpg 1x, ./images/contacts/cont-bgi-mob-2x.jpg 2x"
                 media="(max-width: 767px)">
-            <img class="images" src="./images/contacts/cont-bgi.jpg" alt="img">
+            <img class="contacts-img" src="./images/contacts/cont-bgi-mob.jpg" alt="img">
         </picture>
-        <div class="contacts-desk">
-            <div class="contacts-right">
-                <p class="contacts-info">
-                    In case of queries about order handling and/ delay, drop us an email at 
+        <div class="contacts-des-wrap">
+            <div class="contacts-des-group">
+                <p class="contatcs-info-text">In case of queries about order handling and/or delay, drop us an email at
+            
+                    <span class="contatcs-info-link"><a href="mailto:info@shopforgamers.com">info@shopforgamers.com</a></span>
                 </p>
-                <a class="contacts-info-link link" href="mailto:info@shopforgamers.com">info@shopforgamers.com</a>
-                <ul class="contacts-group list">
+            
+                <ul class="contacts-link contacts-container">
                     <li class="contacts-item">
-                        <h3 class="contacts-group-title">Email</h3>
-                        <a class="contacts-link link" href="mailto:Sfg.info@gmail.com">Sfg.info@gmail.com</a>
+                        <p class="contacts-item-title">Email</p>
+                        <a class="contacts-item-link" href="mailto:Sfg.info@gmail.com">Sfg.info@gmail.com</a>
                     </li>
                     <li class="contacts-item">
-                        <h3 class="contacts-group-title">Phone number</h3>
-                        <a class="contacts-link link" href="tel:+380936432288">+38 (093) 643 22 88</a>
-                        <a class="contacts-link link" href="tel:+380503454423">+38 (050) 345 44 23</a>
+                        <p class="contacts-item-title">Phone number</p>
+                        <a class="contacts-item-link" href="tel:+380936432288">+38 (093) 643 22 88</a>
+                        <a class="contacts-item-link" href="tel:+380503454423">+38 (050) 345 44 23</a>
                     </li>
                 </ul>
             </div>
-            <form class="contacts-form action=">
+            <form class="contacts-form contacts-container">
                 <h2 class="contacts-form-title">Contact us</h2>
-                <input class="contacts-input" type="text" placeholder="Name">
-                <input class="contacts-input" type="email" placeholder="Email">
-                <label class="contacts-comm-title" for="contacts-comment">Leave your message</label>
-                <textarea class="contacts-texterea" name="contacts-comment" id="contacts-comment" rows="10"></textarea>
-                <button class="btn btn-light contacts-btn" type="submit">Send</button>
+                <label for=""></label>
+                <input class="contacts-form-input" type="text" placeholder="Name">
+                <label for=""></label>
+                <input class="contacts-form-input" type="email" name="" id="" placeholder="Email">
+                <label class="contacts-comment-title" for="">Leave your message</label>
+                <textarea class="contacts-form-texterea" name="contacts-user-form" cols="30"></textarea>
+                <button class="btn btn-light contacts-form-btn" type="submit">Send</button>
             </form>
         </div>
-    </div>
-    <div class="backdrop">
-        <div class="contacts-answer">
-            <button class="answer-btn-close" type="button">
-                <svg class="answer-btn-icon" width="32" height="32" >
-                    <use href="./images/sprite/sprite.svg#icon-cross"></use>
-                </svg>
-            </button>
-            <p class="answer-text" >Thank you<br/>
-            for your message!<br/> We will contact you soon!</p>
-            <button  class="btn btn-dark" type="submit">Ok</button>
+        <div class="backdrop">
+            <div class="contacts-answer">
+                <button class="answer-btn-close" type="button">
+                    <svg class="answer-btn-icon" width="32" height="32" >
+                        <use href="./images/sprite/sprite.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                <p class="answer-text" >Thank you<br/>
+                for your message!<br/> We will contact you soon!</p>
+                <button  class="btn btn-dark" type="submit">Ok</button>
+            </div>
         </div>
     </div>
 </section>
