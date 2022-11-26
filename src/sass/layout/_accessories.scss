@@ -22,7 +22,7 @@
     @include tablet {
           background-image: url(../images/accessories/line-tab.png), url(../images/accessories/line-tab.png);
           background-repeat: no-repeat;
-          background-position: 0 8%, 55px -160px  ;
+          background-position: 0 288px, 55px -160px  ;
           background-size: contain;
           @include retina {
               background-image: url(../images/accessories/line-tab.png), url(../images/accessories/accessories-bg-tab@2x.jpg);
@@ -31,7 +31,7 @@
       @include desktop {
           background-image:  url(../images/accessories/accessories-bg-desk.jpg),url(../images/accessories/line-des.png);
           background-repeat: no-repeat;
-          background-position: 0 11%, -70px -115px;
+          background-position: 0 288px, -70px -115px;
           background-size: contain, cover;
           @include retina {
               background-image: url(../images/accessories/line-des.png), url(../images/accessories/accessories-bg-desk@2x.jpg);
@@ -49,7 +49,7 @@
   }
 }
 
-.container.btn {
+.container.btn-accessories {
   @include tablet {
     padding: 0 40px;
   }
@@ -58,7 +58,7 @@
   }
 }
 
-.btn-list {
+.btn-list-accessories {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -77,7 +77,7 @@
   }
 }
 
-.btn-item {
+.btn-item-accessories {
   display: block;
   font-weight: 700;
   font-size: 16px;
@@ -204,6 +204,7 @@
   left: 0;
   width: 285px;
   color: var(--primary-text-color);
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.14;
   background-color: var(--primary-bg-color);
@@ -225,6 +226,7 @@
 }
 
 .accessories-name {
+  width: 261px;
   font-size: 22px;
   font-weight: 500;
   color: var(--accent);
