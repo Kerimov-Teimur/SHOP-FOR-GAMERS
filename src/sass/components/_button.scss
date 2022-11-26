@@ -1,21 +1,21 @@
 .btn {
     display: block;
-    min-width: 173px;
-    min-height: 51px;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.19;
-    text-transform: uppercase;
-    border-radius: 16px;
-    border: transparent;
+    // min-width: 173px;
+    // min-height: 51px;
+    // font-family: inherit;
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: 1.19;
+    // text-transform: uppercase;
+    // border-radius: 16px;
+    // border: transparent;
     cursor: pointer;
 
-    @include tablet {
-        min-width: 306px;
-        min-height: 70px;
-        font-size: 32px;
-    }
+    // @include tablet {
+    //     min-width: 306px;
+    //     min-height: 70px;
+    //     font-size: 32px;
+    // }
 }
 
 .btn-dark {
