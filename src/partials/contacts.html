@@ -37,19 +37,18 @@
                 <input class="contacts-form-input" type="email" name="" id="" placeholder="Email">
                 <label class="contacts-comment-title" for="">Leave your message</label>
                 <textarea class="contacts-form-texterea" name="contacts-user-form" cols="30"></textarea>
-                <button class="btn btn-light contacts-form-btn" type="submit">Send</button>
+                <button type="button" class="btn btn-light contacts-form-btn" data-modal-open-contacts>Send</button>
             </form>
         </div>
-        <div class="backdrop">
-            <div class="contacts-answer">
-                <button class="answer-btn-close" type="button">
-                    <svg class="answer-btn-icon" width="32" height="32" >
+        <div class="backdrop-contacts is-hidden" data-modal-contacts>
+            <div class="modal-contacts">
+                <button type="button" class="contacts-btn-close" data-modal-close-order>
+                    <svg class="icon-btn-close" width="15px" height="15px">
                         <use href="./images/sprite/sprite.svg#icon-cross"></use>
                     </svg>
                 </button>
-                <p class="answer-text" >Thank you<br/>
-                for your message!<br/> We will contact you soon!</p>
-                <button  class="btn btn-dark" type="submit">Ok</button>
+                <p class="contacts-text">Thank you <br> for your message! <br> We will contact you soon!</p>
+                <a class="btn-contacts btn btn-dark" href="./accessories-page.html" data-modal-close-contacts>KEEP SHOPPING</a>
             </div>
         </div>
     </div>
