@@ -177,6 +177,11 @@
 
     & img {
         border-radius: 12px;
+        transition: transform 500ms ease;
+    }
+
+    & img:hover {
+        transform: scale(1.1);
     }
 }
 

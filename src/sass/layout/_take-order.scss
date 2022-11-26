@@ -1,17 +1,21 @@
 .take-order {
-  background-image: url(../images/take_order_page/bg_m-1x.jpg);
+  padding: 40px 0 48px 0;
+  background-image:url(../images/take_order_page/line-mob.png), url(../images/take_order_page/bg_m-1x.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: -1 45px, center;
+  background-size: contain, cover;
   margin: 0 auto;
-  padding-top: 104px;
 
   @include retina {
     background-image: url(../images/take_order_page/bg_m-2x.jpg);
   }
 
   @include tablet {
-    background-image: url(../images/take_order_page/bg_t-1x.jpg);
+    padding: 120px 0;
+    background-repeat: no-repeat;
+    background-position: -1 156px, center;
+    background-size: contain, cover;
+    background-image: url(../images/take_order_page/line-tab.png), url(../images/take_order_page/bg_t-1x.jpg);
 
     @include retina {
       background-image: url(../images/take_order_page/bg_t-2x.jpg);
@@ -19,7 +23,11 @@
   }
 
   @include desktop {
-    background-image: url(../images/take_order_page/bg_d-1x.jpg);
+    padding: 120px 0;
+    background-repeat: no-repeat;
+    background-position: -1 178px, center;
+    background-size: contain, cover;
+    background-image: url(../images/take_order_page/line-des.png), url(../images/take_order_page/bg_d-1x.jpg);
 
     @include retina {
       background-image: url(../images/take_order_page/bg_d-2x.jpg);
@@ -28,20 +36,19 @@
 }
 
 .take-order-container {
-  padding-top: 40px;
+  padding: 0 40px;
 
   @media screen and (max-width: 480px) {
+      width: 320px;
       padding-left: 16px;
       padding-right: 16px;
     }
 }
 
 .top-order-accessories {
-    @include mobile {
-      
+  @include mobile {
     margin-bottom: 16px;
-        
-        }
+  }
 
   @include tablet {
     padding-right: 0;
@@ -58,42 +65,68 @@
   text-align: left;
   padding-left: 16px;
   color: var(--primary-text-color);
+  margin-bottom: 35px;
 
   @include tablet {
     font-size: 56px;
     line-height: 1.17;
-    padding-left: 99px;
+    padding-left: 59px;
     margin-bottom: 51px;
   }
 
   @include desktop {
+    margin-bottom: 75px;
   }
 }
 
 .order-subtitle {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 1.18;
-  color: var(--primary-text-color);
-  margin-bottom: 16px;
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+
+  @include desktop {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 1.18;
+    color: var(--primary-text-color);
+    margin-bottom: 32px;
+    text-align: end;
+  }
+}
+
+.order-caption {
+  @media screen and (max-width: 767px) {
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.18;
+    color: var(--primary-text-color);
+    margin-bottom: 16px;
+  }
 
   @include tablet {
-    margin-bottom: 24px;
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
     font-size: 56px;
     line-height: 1.17;
+    color: var(--primary-text-color);
+    margin-bottom: 24px;
     white-space: nowrap;
   }
+
   @include desktop {
-    text-align: end;
+    display: none;
   }
 }
 
 .product {
   position: relative;
-  padding-right: 16px;
-  padding-left: 16px;
   @include tablet {
     margin-bottom: 32px;
   }
@@ -115,9 +148,9 @@
 }
 
 .price-order {
-  position: relative;
   display: flex;
   margin-bottom: 16px;
+  margin-top: 16px;
 
   @include tablet {
     display: block;
@@ -150,10 +183,9 @@
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 100%;
+  line-height: 1.2;
   text-decoration-line: line-through;
   color: var(--contacts-color);
-  margin-top: 16px;
   white-space: nowrap;
 
   @include tablet {
@@ -173,22 +205,22 @@
   display: inline;
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 32px;
-  line-height: 100%;
+  line-height: 1;
   color: var(--accent);
-  margin-left: 152px;
+  margin-left: 135px;
   margin-top: 24px;
   white-space: nowrap;
 
   @include mobile {
-    margin-left: auto;
+    margin-right: auto;
   }
 
   @include tablet {
     display: flex;
     font-size: 48px;
-    line-height: 100%;
+    line-height: 1;
     margin-left: 0;
     margin-top: 0;
   }
@@ -386,7 +418,7 @@
 
 .other-coments {
   @include desktop {
-    margin-top: 100px;
+    margin-top: 90px;
   }
 }
 
@@ -442,7 +474,6 @@
 }
 
 .btn-order-bottom {
-  margin-bottom: 48px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
