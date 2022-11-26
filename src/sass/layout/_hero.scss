@@ -1,57 +1,58 @@
 .hero {
   height: 601px;
-  background-image:  url(../images/hero/bg-gadget-mob.png), url(../images/hero/bg-hero.jpg);
+  background-image: url(../images/hero/bg-gadget-mob.png),
+    url(../images/hero/bg-Fon-hero.png), url(../images/hero/bg-hero.jpg);
   background-repeat: no-repeat;
-  background-position: right 0px top 76px, 75% 0;
-  background-size: 304px 472px, cover;
+  background-position: right 0 top -29px, 80% -73px, 80% -80px;
+  background-size: 304px 472px, cover, cover;
   background-blend-mode: luminosity;
-
   @include retina {
-  background-image: url(../images/hero/bg-gadget-mob-2x.png), url(../images/hero/bg-hero-2x.jpg);
+    background-image: url(../images/hero/bg-gadget-mob-2x.png),
+      url(../images/hero/bg-Fon-hero-2x.png), url(../images/hero/bg-hero-2x.jpg);
   }
-
   @include tablet {
-  height: 860px;
-  background-image:  url(../images/hero/bg-gadget-tab.png), url(../images/hero/bg-hero.jpg);
-  background-size:379px 616px, cover;
-  background-position: left 389px top 169px, 75% 0;
-
-  @include retina {
-    background-image: url(../images/hero/bg-gadget-tab-2x.png), url(../images/hero/bg-hero-2x.jpg);
+    height: 860px;
+    background-image: url(../images/hero/bg-gadget-tab.png),
+      url(../images/hero/bg-Fon-hero.png), url(../images/hero/bg-hero.jpg);
+    background-size: 379px 616px, cover, cover;
+    background-position: 389px 169px, 70% -70px, 70% -79px;
+    @include retina {
+      background-image: url(../images/hero/bg-gadget-tab-2x.png),
+        url(../images/hero/bg-Fon-hero-2x.png),
+        url(../images/hero/bg-hero-2x.jpg);
     }
-}
-
-@include desktop {
-  
-  background-image: url(../images/hero/bg-gadget-desk.png), url(../images/hero/bg-hero.jpg);
-  background-size: 668px 652px, cover;
-  background-position: left 543px top 136px, 75% 0;
-
-  @include retina {
-    background-image: url(../images/hero/bg-gadget-desk-2x.png), url(../images/hero/bg-hero-2x.jpg);
+  }
+  @include desktop {
+    background-image: url(../images/hero/bg-gadget-desk.png),
+      url(../images/hero/bg-Fon-hero.png), url(../images/hero/bg-hero.jpg);
+    background-size: 668px 652px, cover, cover;
+    background-position: left 573px top 50px, 100% -100px, 100% -100px;
+    @include retina {
+      background-image: url(../images/hero/bg-gadget-desk-2x.png),
+        url(../images/hero/bg-Fon-hero-2x.png),
+        url(../images/hero/bg-hero-2x.jpg);
     }
-}
-
+  }
 }
 
 .hero-container {
   display: flex;
   flex-direction: column;
-  padding-top: 284px ;
-  align-items: center;  
+  padding-top: 180px;
+  align-items: center;
 
   @include tablet {
-  padding-top: 290px ;
+    // padding-top: 290px;
     align-items: flex-start;
+  }
+
+  @include desktop {
+    // padding-top: 316px;
+    padding-left: 102px;
+    align-items: flex-start;
+  }
 }
 
-@include desktop {
-  padding-top: 316px ;
-  padding-left: 102px;
-    align-items: flex-start;
-}
-}
-  
 .hero-title {
   display: block;
   text-align: center;
@@ -84,7 +85,6 @@
     width: 515px;
   }
 }
-
 
 .hero-link {
   text-align: center;
