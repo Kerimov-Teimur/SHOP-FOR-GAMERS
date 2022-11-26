@@ -6,9 +6,6 @@
     <symbol id="icon-circle" viewBox="0 0 32 32">
       <path fill="#fff" style="fill:var(--color1, #fff)" d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z"/>
     </symbol>
-    <symbol id="icon-cross" viewBox="0 0 32 32">
-      <path fill="none" stroke="#86e543" style="stroke:var(--color2, #86e543)" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.143" d="M21.486 10.514 10.515 21.485m-.001-10.971 10.971 10.971M16 31.238c8.416 0 15.238-6.822 15.238-15.238S24.416.762 16 .762.762 7.584.762 16 7.584 31.238 16 31.238z"/>
-    </symbol>
     <symbol id="icon-facebook" viewBox="0 0 33 32">
       <path fill="#fff" style="fill:var(--color1, #fff)" d="M17.149 0c8.837 0 16 7.163 16 16s-7.163 16-16 16-16-7.163-16-16 7.163-16 16-16z"/>
       <path fill="#001414" style="fill:var(--color3, #001414)" d="M21.149 13.181h-2.952V11.52c0-.624.481-.769.821-.769h2.083V8.01l-2.868-.009c-3.185 0-3.909 2.045-3.909 3.353v1.827h-1.841v2.827h1.84v7.993h3.875v-7.993h2.613l.339-2.827z"/>
@@ -24,7 +21,7 @@
     <symbol id="icon-burger" viewBox="0 0 48 32">
       <path fill="#86e543" style="fill: var(--color1, #86e543)" d="M45.467 13.333h-42.933c-1.399 0-2.533 0.681-2.533 1.52v0.16c0 0.839 1.134 1.52 2.533 1.52h42.933c1.399 0 2.533-0.681 2.533-1.52v-0.16c0-0.839-1.134-1.52-2.533-1.52zM45.467 26.667h-42.933c-1.399 0-2.533 0.681-2.533 1.52v0.16c0 0.839 1.134 1.52 2.533 1.52h42.933c1.399 0 2.533-0.681 2.533-1.52v-0.16c0-0.839-1.134-1.52-2.533-1.52zM45.467 0h-42.933c-1.399 0-2.533 0.681-2.533 1.52v0.16c0 0.839 1.134 1.52 2.533 1.52h42.933c1.399 0 2.533-0.681 2.533-1.52v-0.16c0-0.839-1.134-1.52-2.533-1.52z"></path>
     </symbol>
-    <symbol id="icon-cross-burger" viewBox="0 0 31 32">
+    <symbol id="icon-cross" viewBox="0 0 31 32">
       <path fill="none" stroke="#86e543" style="stroke:var(--color2, #86e543)" stroke-linecap="round" stroke-width="3.556" d="M29.037 30.222 1.777 1.778m27.26 0L1.777 30.222"/>
     </symbol>
     <symbol id="icon-like-down" viewBox="0 0 34 32">

@@ -1,9 +1,9 @@
 <section class="take-order section">
-  <div class="container take-order">
+  <div class="take-order-container container">
     <h2 class="order-title">Take order</h2>
 
     <div class="product">
-      <p class="order-text">Xiberia K9 PRO PC Headset</p>
+      <h3 class="order-subtitle">Xiberia K9 PRO PC Headset</h3>
       <div class="headphones">
         <div class="top-order-accessories">
           <picture>
@@ -36,9 +36,6 @@
             />
           </picture>
         </div>
-
-
-
         <div class="price-order">
           <ul class="price-list-order list"
       >
@@ -178,11 +175,10 @@
         </ul>
       </div>
     </div>
- <p class="form-order-text">CONTACT US</p>
     <div class="about">
       <div class="other-form">
         <form class="form-order">
-         
+        <p class="form-order-text">CONTACT US</p>
 
           <input
             type="name"
@@ -198,26 +194,38 @@
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
             placeholder="Email"
           />
-          <input
-            type="color-option"
-            class="order-input"
-            name="color-option"
-            id="color-option"
-            placeholder="Color option"
-          />
-          <!-- <select id="color" name="color">
-            <option  value="K9D Black Orange">K9D Black Orange</option>
-            <option value="K9D Silver Gray">K9D Silver Gray</option>
-            <option value="K9U White Blue">K9U White Blue</option>
-          </select> -->
+        
+          <!-- <div class="order-select-wrap">
+            <select class="order-select" id="color" name="color">
+              <option class="order-option" disabled="disabled" selected="selected">Color option</option>
+              <option class="order-option" value="K9D Black Orange">K9D Black Orange</option>
+              <option class="order-option" value="K9D Silver Gray">K9D Silver Gray</option>
+              <option class="order-option" value="K9U White Blue">K9U White Blue</option>
+            </select>
+          </div> -->
+          <div class="order-select" data-state="">
+            <div class="order-select-title" data-default="Option 0">Color option</div>
+            <div class="order-select-content">
+              <input id="singleSelect0" class="order-select-input" type="radio" name="singleSelect" checked />
+              <label for="singleSelect0" class="order-select-label">Color option</label>
+              <input id="singleSelect1" class="order-select-input" type="radio" name="singleSelect" />
+              <label for="singleSelect1" class="order-select-label">K9D Black Orange</label>
+              <input id="singleSelect2" class="order-select-input" type="radio" name="singleSelect" />
+              <label for="singleSelect2" class="order-select-label">K9D Silver Gray</label>
+              <input id="singleSelect3" class="order-select-input" type="radio" name="singleSelect" />
+              <label for="singleSelect3" class="order-select-label">K9U White Blue</label>
+            </div>
+          </div>
 
-          <input
-            type="quantity"
-            class="order-input"
-            name="quantity"
-            id="quantity"
-            placeholder="Quantity"
-          />
+          <div class="order-input-wrap">
+            <input
+              type="quantity"
+              class="order-input"
+              name="quantity"
+              id="quantity"
+              placeholder="Quantity"
+            />
+          </div>
           <!-- <select id="quantity" name="quantity">
             <option value=""></option>
             <option value=""></option>
@@ -225,13 +233,15 @@
             <option value=""></option>
           </select> -->
 
-          <input
-            type="payment"
-            class="order-input"
-            name="payment"
-            id="payment"
-            placeholder="Payment"
-          />
+          <div class="order-input-wrap">
+            <input
+              type="payment"
+              class="order-input"
+              name="payment"
+              id="payment"
+              placeholder="Payment"
+            />
+          </div>
           <!-- <select id="payment" name="payment">
             <option value=""></option>
             <option value=""></option>
@@ -256,48 +266,40 @@
       </div>
 
       <div class="btn-form">
-        <button type="button" class="btn-order-top"  >
+        <button type="button" class="btn-order-top btn btn-dark" data-modal-open-order>
           BUY IT NOW
         </button>
 
-        <button type="button" class="btn-order-bottom" >ADD TO CART</button>
+        <button type="button" class="btn-order-bottom btn btn-light" data-modal-open-cart>ADD TO CART</button>
       </div>
 
-      <div class="mob-menu is-hidden " >
-       <div class="container">
-        <div class="mob-order-top">
-          <button type="button" class="menu-btn-cross" >
-            <svg width="40px" height="40px">
-              <use
-                class="icon-cross"
-                href="./images/sprite/sprite.svg#icon-cross"
-              ></use>
-            </svg>
-          </button>
-           <p>Thank you for your order ! We will contact you soon !</p>
-           <button type="button " class="btn-order"  >KEEP SHOPPING</button>
-        </div>
+      <div class="backdrop is-hidden" data-modal-order>
+        <div class="modal-order">
+            <button type="button" class="menu-btn-cross" data-modal-close-order>
+              <svg  class="icon-btn-cross" width="15px" height="15px">
+                <use
+                  href="./images/sprite/sprite.svg#icon-cross"
+                ></use>
+              </svg>
+            </button>
+             <p class="modal-text">Thank you <br> for your order! <br> We will contact you soon!</p>
+            <a class="btn-order btn btn-dark" href="./accessories-page.html">KEEP SHOPPING</a>
       </div>
-    </div>
-    </div>
+      </div>
 
-    <div class="mob-menu is-hidden">
-      <div class="container">
-        <div class="mob-order-top">
-          <button type="button"  class="menu-btn-cross" >
-            <svg width="40px" height="40px">
-              <use
-                class="icon-cross"
-                href="./images/sprite/sprite.svg#icon-cross"
-              ></use>
-            </svg>
-          </button>
-          <p>Excellent choice! Let's move on to the checkout!</p>
-          <button type="submit" class="btn-order">LET'S GO!</button>
-        </div>
+      <div class="backdrop is-hidden" data-modal-cart>
+        <div class="modal-cart">
+            <button type="button"  class="menu-btn-cross" data-modal-close-cart>
+              <svg class="icon-btn-cross" width="15px" height="15px">
+                <use
+                  href="./images/sprite/sprite.svg#icon-cross"
+                ></use>
+              </svg>
+            </button>
+            <p class="modal-text">Excellent choice! Let's move on to the checkout!</p>
+            <a class="btn-order btn btn-dark" href="./index.html">LET'S GO!</a>
       </div>
-      
-    </div>
+      </div>
     
   </div>
   

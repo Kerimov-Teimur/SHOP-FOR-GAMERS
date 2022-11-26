@@ -219,15 +219,21 @@
 
 
 .sale-container .sale-btn {
-    min-width: 195px;
-    min-height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 24px auto 0 auto;
     background-color: var(--primary-text-color);
-    padding: 16px 48px;
+    color: #01383A;
     line-height: 1.19;
     font-size: 16px;
+    width: 153px;
+    height: 51px;
+
 
     @include tablet {
+        width: 195px;
+        height: 65px;
         line-height: 1.17;
         font-size: 28px;
     }

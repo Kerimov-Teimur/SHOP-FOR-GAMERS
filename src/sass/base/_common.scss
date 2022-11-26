@@ -1,4 +1,5 @@
 body{
+  background-color: var(--primary-bg-color);
 
   @media screen and (max-width: 767px) {
     background-image: url(../images/sale/sale-bg-mob.jpg);
