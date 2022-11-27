@@ -1,0 +1,1 @@
+{"mappings":"AAAAA,EAAEC,UAAUC,OAAM,WACjBF,EAAE,gBAAgBG,OAAM,WACvBH,EAAEI,MAAMC,YAAY,O","sources":["src/js/burger-animation.js"],"sourcesContent":["$(document).ready(function(){\n\t$('#burger-menu').click(function(){\n\t\t$(this).toggleClass('open');\n\t});\n});"],"names":["$","document","ready","click","this","toggleClass"],"version":3,"file":"index.b72bfd1e.js.map"}
