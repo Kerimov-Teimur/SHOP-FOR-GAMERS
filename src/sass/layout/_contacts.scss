@@ -1,10 +1,9 @@
 .contatcts-page {
-    padding-top: 224px;
-    padding-bottom: 120px;
-    background-image: url(../images/contacts/bgi-mob.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    padding: 40px 0 48px 0;
+    background-image: url(../images/contacts/line-mob.png), url(../images/contacts/bgi-mob.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 2px 48px, center;
+    background-size: contain, cover;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -12,19 +11,19 @@
         background-image: url(../images/contacts/bgi-mob-2x.jpg);
     }
 
-    @media screen and (min-width: 768px) {
-        background-image: url(../images/contacts/bgi-tab.jpg);
-        min-width: 768px;
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/contacts/bgi-tab-2x.jpg);
-        }
+    @include tablet {
+        padding: 120px 0;
+        background-image: url(../images/contacts/line-tab.png);
+        background-repeat: no-repeat;
+        background-position: 2px 165px;
+        background-size: contain;
     }
 
-    @media screen and (min-width: 1200px) {
-        background-image: url(../images/contacts/bgi-des.jpg);
+    @include desktop {
+        background-image: url(../images/contacts/line-des.png), url(../images/contacts/bgi-des.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 2px 165px, center;
+        background-size: contain, cover;
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -58,13 +57,11 @@
     width: 480px;
     margin-bottom: 16px;
     @include tablet {
-        width: 688px;
         height: 346px;
         border-radius: 13px;
     }
 
     @include desktop {
-        width: 1200px;
         border-radius: 22px;
         margin-bottom: 54px;
     }
