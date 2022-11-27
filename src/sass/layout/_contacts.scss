@@ -57,11 +57,13 @@
     width: 480px;
     margin-bottom: 16px;
     @include tablet {
+        width: 688px;
         height: 346px;
         border-radius: 13px;
     }
 
     @include desktop {
+        width: 1200px;
         border-radius: 22px;
         margin-bottom: 54px;
     }
