@@ -1,10 +1,5 @@
 .contatcts-page {
     padding: 40px 0 48px 0;
-    background-image: url(../images/contacts/line-mob.png), url(../images/contacts/bgi-mob.jpg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: 2px 48px, center;
-    background-size: contain, cover;
-
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -12,25 +7,45 @@
     }
 
     @include tablet {
-        padding: 120px 0;
-        background-image: url(../images/contacts/line-tab.png);
-        background-repeat: no-repeat;
-        background-position: 2px 165px;
-        background-size: contain;
+        background-image: url(../images/contacts/bgi-tab.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/contacts/bgi-tab-2x.jpg);
+        }
     }
+
+    @include desktop {
+        background-image: url(../images/contacts/bgi-des.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+           background-image: url(../images/contacts/bgi-des-2x.jpg);
+        }
+    }
+}
+
+.line {
+    background-image: url(../images/contacts/line-mob.png);
+    background-repeat: no-repeat;
+    background-position: 1px 45px;
+    background-size: contain;
+
+    @include tablet {
+        padding: 120px 0;
+        background-image: url(../images/contacts/line-tab.png), url(../images/contacts/bgi-tab.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 2px 155px, bottom -250px left 20px;
+        background-size: contain, 85%;
+        }
 
     @include desktop {
         background-image: url(../images/contacts/line-des.png), url(../images/contacts/bgi-des.jpg);
         background-repeat: no-repeat, no-repeat;
-        background-position: 2px 165px, center;
-        background-size: contain, cover;
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/contacts/bgi-des-2x.jpg);
-        }
+        background-position: 1px 155px, 50px 20px;
+        background-size: contain, 150%;
     }
+
 }
 
 .contatcts-title{
@@ -77,7 +92,7 @@
 
 .contatcs-info-text{
     width: 293px;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -96,6 +111,7 @@
 }
 
 .contacts-link{
+    margin-top: 24px;
     display: flex;
     flex-direction: column;
     padding: 0 15px;
@@ -205,6 +221,7 @@
 
 .contacts-form-btn{
     color: #FFFFFF;
+    border: 1px solid #ffffff;
     margin: 0 auto;
 }
 
@@ -255,7 +272,7 @@
 
     @include desktop {
         width: 768px;
-        padding: 88px 65px;
+        padding: 88px 25px;
     }
 }
 
