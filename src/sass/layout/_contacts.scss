@@ -1,10 +1,9 @@
 .contatcts-page {
-    padding-top: 224px;
-    padding-bottom: 120px;
-    background-image: url(../images/contacts/bgi-mob.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    padding: 40px 0 48px 0;
+    background-image: url(../images/contacts/line-mob.png), url(../images/contacts/bgi-mob.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 2px 48px, center;
+    background-size: contain, cover;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -12,19 +11,19 @@
         background-image: url(../images/contacts/bgi-mob-2x.jpg);
     }
 
-    @media screen and (min-width: 768px) {
-        background-image: url(../images/contacts/bgi-tab.jpg);
-        min-width: 768px;
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/contacts/bgi-tab-2x.jpg);
-        }
+    @include tablet {
+        padding: 120px 0;
+        background-image: url(../images/contacts/line-tab.png);
+        background-repeat: no-repeat;
+        background-position: 2px 165px;
+        background-size: contain;
     }
 
-    @media screen and (min-width: 1200px) {
-        background-image: url(../images/contacts/bgi-des.jpg);
+    @include desktop {
+        background-image: url(../images/contacts/line-des.png), url(../images/contacts/bgi-des.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 2px 165px, center;
+        background-size: contain, cover;
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -219,6 +218,79 @@
 
 // ------------------------------------
 
-.backdrop{
-    
+.backdrop-contacts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 20, 20, 0.8);
+    z-index: 888;
+    transition:
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-contacts {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 272px;
+    padding: 100px 20px;
+    transform: translate(-50%, -50%) scale(1);
+    background-color: var(--primary-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .backdrop-contacts.is-hidden & {
+        transform: translate(-50%, -50%) scale(1.5, 0);
+    }
+
+    @include tablet {
+        width: 688px;
+        padding: 88px 25px;
+    }
+
+    @include desktop {
+        width: 768px;
+        padding: 88px 65px;
+    }
+}
+
+.contacts-btn-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid var(--accent);
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.contacts-text {
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--primary-text-color);
+
+    @include tablet {
+        padding-bottom: 80px;
+        font-size: 56px;
+    }
+}
+
+.btn-contacts {
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
 }
