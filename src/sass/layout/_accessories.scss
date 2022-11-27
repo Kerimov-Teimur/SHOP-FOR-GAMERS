@@ -1,43 +1,51 @@
-.section.accessories{
+.section.accessories {
   @media screen and (min-width: 320px) {
-    background-color:var(--primary-bg-color);
-    background-image: url(../images/accessories/line-mob.png),url(../images/accessories/accessories-bg-mob.jpg);
-      background-repeat: no-repeat;
-      background-position: 0 173px, 62px -120px ;
-      background-size: contain,cover;
-       @include retina {
-          background-image: url(../images/accessories/line-mob.png),url(../images/accessories/accessories-bg-mob@2x.jpg);
-      }
+    background-color: var(--primary-bg-color);
+    background-image: url(../images/accessories/line-mob.png),
+      url(../images/accessories/accessories-bg-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 173px, 62px -120px;
+    background-size: contain, cover;
+    @include retina {
+      background-image: url(../images/accessories/line-mob.png),
+        url(../images/accessories/accessories-bg-mob@2x.jpg);
+    }
   }
   @include mobile {
-    background-color:var(--primary-bg-color);
-    background-image: url(../images/accessories/line-mob.png),url(../images/accessories/accessories-bg-mob.jpg);
-      background-repeat: no-repeat;
-      background-position: 0 162px, 62px -120px ;
-      background-size: contain,cover;
-       @include retina {
-          background-image: url(../images/accessories/line-mob.png),url(../images/accessories/accessories-bg-mob@2x.jpg);
-      }
+    background-color: var(--primary-bg-color);
+    background-image: url(../images/accessories/line-mob.png),
+      url(../images/accessories/accessories-bg-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 162px, 62px -120px;
+    background-size: contain, cover;
+    @include retina {
+      background-image: url(../images/accessories/line-mob.png),
+        url(../images/accessories/accessories-bg-mob@2x.jpg);
+    }
   }
-    @include tablet {
-          background-image: url(../images/accessories/line-tab.png), url(../images/accessories/line-tab.png);
-          background-repeat: no-repeat;
-          background-position: 0 288px, 55px -160px  ;
-          background-size: contain;
-          @include retina {
-              background-image: url(../images/accessories/line-tab.png), url(../images/accessories/accessories-bg-tab@2x.jpg);
-          }
-      }  
-      @include desktop {
-          background-image:  url(../images/accessories/accessories-bg-desk.jpg),url(../images/accessories/line-des.png);
-          background-repeat: no-repeat;
-          background-position: 0 288px, -70px -115px;
-          background-size: contain, cover;
-          @include retina {
-              background-image: url(../images/accessories/line-des.png), url(../images/accessories/accessories-bg-desk@2x.jpg);
-          }
-      }  
+  @include tablet {
+    background-image: url(../images/accessories/line-tab.png),
+      url(../images/accessories/line-tab.png);
+    background-repeat: no-repeat;
+    background-position: 0 288px, 55px -160px;
+    background-size: contain;
+    @include retina {
+      background-image: url(../images/accessories/line-tab.png),
+        url(../images/accessories/accessories-bg-tab@2x.jpg);
+    }
   }
+  @include desktop {
+    background-image: url(../images/accessories/accessories-bg-desk.jpg),
+      url(../images/accessories/line-des.png);
+    background-repeat: no-repeat;
+    background-position: 0 288px, -70px -115px;
+    background-size: contain, cover;
+    @include retina {
+      background-image: url(../images/accessories/line-des.png),
+        url(../images/accessories/accessories-bg-desk@2x.jpg);
+    }
+  }
+}
 
 .section.accessories {
   padding: 40px 0 48px 0;
@@ -102,7 +110,7 @@
     color: var(--primary-bg-color);
     background-color: var(--accent);
     box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
-     0px 4px 20px rgba(134, 229, 67, 0.4);
+      0px 4px 20px rgba(134, 229, 67, 0.4);
   }
 
   @include tablet {
@@ -146,7 +154,6 @@
   @include desktop {
     column-gap: 20px;
     row-gap: 44px;
-    
   }
 }
 
@@ -156,8 +163,7 @@
   font-weight: 500;
   color: var(--primary-text-color);
   margin-bottom: 27px;
-  @include mobile{
-  
+  @include mobile {
   }
   @include tablet {
     font-size: 56px;
@@ -261,9 +267,9 @@
 }
 
 .page-tablet {
-  @media screen and (min-width:320px) {
-    display: none;   
-     }
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
   @include mobile {
     display: none;
   }
@@ -292,15 +298,15 @@
 
 // ------------------ Slick -----------------//
 
-.slick-dotted.slick-slider{
+.slick-dotted.slick-slider {
   margin-bottom: 0;
 }
 
-.slick-list{
-margin-bottom: 44px;
-@include tablet{
-  margin-bottom: 52px;
-}
+.slick-list {
+  margin-bottom: 44px;
+  @include tablet {
+    margin-bottom: 52px;
+  }
 }
 
 .slick-dots li.slick-active button:before {
@@ -321,14 +327,14 @@ margin-bottom: 44px;
   border-radius: 30px;
 }
 
-.slick-dots>li {
-width: 16px;
-height: 16px;
-margin-right: 16px;
-margin-left: 0;
+.slick-dots > li {
+  width: 16px;
+  height: 16px;
+  margin-right: 16px;
+  margin-left: 0;
 }
 
-.slick-dots>li.slick-active{
+.slick-dots > li.slick-active {
   width: 40px;
 }
 
