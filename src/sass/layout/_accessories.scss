@@ -16,7 +16,7 @@
     background-image: url(../images/accessories/line-mob.png),
       url(../images/accessories/accessories-bg-mob.jpg);
     background-repeat: no-repeat;
-    background-position: 0 162px, 62px -120px;
+    background-position: 0 168px, 62px -120px;
     background-size: contain, cover;
     @include retina {
       background-image: url(../images/accessories/line-mob.png),
@@ -35,11 +35,10 @@
     }
   }
   @include desktop {
-    background-image: url(../images/accessories/accessories-bg-desk.jpg),
-      url(../images/accessories/line-des.png);
+    background-image: url(../images/accessories/line-des.png), url(../images/accessories/accessories-bg-desk.jpg);
     background-repeat: no-repeat;
-    background-position: 0 288px, -70px -115px;
-    background-size: contain, cover;
+    background-position: 0px 285px, 0 288px;
+    background-size: contain;
     @include retina {
       background-image: url(../images/accessories/line-des.png),
         url(../images/accessories/accessories-bg-desk@2x.jpg);
