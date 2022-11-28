@@ -5,7 +5,7 @@
   background-size: cover, cover;
 
   @include retina {
-    background-image: url(../images/hero/bg-hero-2x.jpg);
+    background-image: url(../images/hero/bg-fon-hero-2x.png), url(../images/hero/bg-hero-2x.jpg);
   }
 
   @include mobile {
@@ -16,7 +16,7 @@
     background-size: cover, cover;
     
     @include retina {
-      background-image: url(../images/hero/bg-hero-2x.jpg);
+      background-image: url(../images/hero/bg-fon-hero-2x.png), url(../images/hero/bg-hero-2x.jpg);
     }
   }
 
@@ -34,9 +34,8 @@
   }
 
   @include desktop {
-    background-image: url(../images/hero/bg-fon-hero.png),
-       url(../images/hero/hero-bg.jpg);
-    background-size: cover,  cover;
+    background-image: url(../images/hero/bg-fon-hero.png), url(../images/hero/hero-bg.jpg);
+    background-size: cover  cover;
     background-position: 50% -136px;
     background-repeat:  no-repeat, no-repeat;
     overflow: hidden;
